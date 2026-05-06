@@ -15,18 +15,26 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
-          <div className="relative w-10 h-10 bg-white rounded-full overflow-hidden border-2 border-barn-red">
+          {/* Farm barn illustration — double the original size */}
+          <div className="relative w-20 h-20 flex-shrink-0">
             <Image
-              src="/images/logo/Stink Farm Logo.png"
-              alt="Stink Farm logo"
+              src="/images/logo/Stink Farm Logo - just Farm.png"
+              alt="Stink Farm barn logo"
               fill
-              className="object-contain p-1"
+              className="object-contain"
               priority
             />
           </div>
-          <span className="font-headline text-2xl text-barn-red leading-none">
-            Stink Farm
-          </span>
+          {/* "STINK FARM" wordmark — wide/thin, so fix height and let width be auto */}
+          <div className="relative h-7 w-48 flex-shrink-0">
+            <Image
+              src="/images/logo/Stink Farm Logo - just Name.png"
+              alt="Stink Farm"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}
