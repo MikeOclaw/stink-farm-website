@@ -6,20 +6,20 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Buy Stink Farm — $19.99 | The Bluffing Card Game',
   description:
-    'Order Stink Farm today for $19.99 + shipping. The hilarious bluffing card game for families, ages 7+. 65 cards, 2–8 players, 20–40 min.',
+    'Order Stink Farm today for $19.99 + shipping. The bluffing card game for families, ages 6–100. 62 cards, 2–6 players, 15–30 min.'
 };
 
 const CARD_GALLERY = [
   { file: 'Kitten 1 (fav).png', alt: 'Kitten card — "if stink were cute"' },
   { file: 'Bull 1 (fav 1).png', alt: 'Bull card — the powerhouse of the farmyard' },
-  { file: 'Elk 2 (fav).png', alt: 'Elk card — majestic and malodorous' },
+  { file: 'Elephant 1 (fav).png', alt: 'Elephant card — big, smelly, hard to bluff about' },
   { file: 'Chicken 2 (fav).png', alt: 'Chicken card — feathers and fibs' },
   { file: 'Goat 1 (fav).png', alt: 'Goat card — chewing through your bluffs' },
   { file: 'Hog 4 (fav 2).png', alt: 'Hog card — wallowing in deception' },
   { file: 'Alpaca 2 (fav).png', alt: 'Alpaca card — fluffy outside, stinky inside' },
   { file: 'Fish 2 (fav 1).png', alt: 'Fish card — smells like a lie' },
   { file: 'Insect 1 (fav 1).png', alt: 'Insect card — the tiny troublemaker' },
-  { file: 'Jackrabbit 1 (fav).png', alt: 'Jackrabbit card — fast and fibbing' },
+  { file: 'Jackalope 1 (fav).png', alt: 'Jackalope card — mythical and misleading' },
   { file: 'Duck 2 (fav).png', alt: 'Duck card — quacking up with bluffs' },
   { file: 'Stink Sniffer 1.png', alt: 'Stink Sniffer action card — sniff out the bluffer' },
   { file: 'Barn Burner 1.png', alt: 'Barn Burner action card — burn it all down' },
@@ -81,10 +81,10 @@ export default function BuyPage() {
 
               {/* Stats */}
               <div className="flex flex-wrap gap-3 mb-6">
-                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–8" />
-                <StatBadge icon="🎂" label="Ages" value="7+" />
-                <StatBadge icon="⏱️" label="Minutes" value="20–40" />
-                <StatBadge icon="🃏" label="Cards" value="65" />
+                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–6" />
+                <StatBadge icon="🎂" label="Ages" value="6–100" />
+                <StatBadge icon="⏱️" label="Minutes" value="15–30" />
+                <StatBadge icon="🃏" label="Cards" value="62" />
               </div>
 
               {/* Price */}
@@ -96,13 +96,10 @@ export default function BuyPage() {
               {/* Description */}
               <div className="font-body text-near-black leading-relaxed mb-8 space-y-3">
                 <p>
-                  Stink Farm is the hilarious bluffing game that turns your family into a
-                  barnyard of liars. Play animal cards face-down, claim any animal you want,
-                  and dare others to call your bluff.
+                  Stink Farm is the bluffing card game where you outbluff your farmyard rivals! Play animal cards face-down, claim any animal you want, and bluff like a boss.
                 </p>
                 <p>
-                  If they catch you lying, you take the stink pile. If they&apos;re wrong —
-                  they do. The last player standing (without a pile of stink) wins!
+                  If they catch your bluff, you take the stink pile. If they&apos;re wrong, they do. First player to play all their cards without getting busted wins!
                 </p>
               </div>
 
@@ -112,12 +109,11 @@ export default function BuyPage() {
                   What&apos;s in the Box 📦
                 </h2>
                 <ul className="font-body text-sm text-gray-600 space-y-1">
-                  <li>✅ 65 beautifully illustrated cards</li>
-                  <li>✅ 11 animal types (Kitten, Bull, Goat, and more)</li>
-                  <li>✅ Action cards (Stink Sniffer, Barn Burner, Bale Blocker…)</li>
-                  <li>✅ Wild cards &amp; Farmer Favor cards</li>
-                  <li>✅ Quick-start cheat sheet</li>
-                  <li>✅ Full rules card</li>
+                  <li>✅ 62 beautifully illustrated cards (46 Stink + 16 Action)</li>
+                  <li>✅ 11 animal types in alphabetical order (Alpaca–Kitten)</li>
+                  <li>✅ Action cards (Stink Sniffer, Barn Burner, Bale Blockade…)</li>
+                  <li>✅ 2 Wild cards</li>
+                  <li>✅ 6 Cheat sheets (animal order guide for all players)</li>
                 </ul>
               </div>
 

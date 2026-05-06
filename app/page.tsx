@@ -37,16 +37,14 @@ export default function HomePage() {
                 Farmyard!
               </h1>
               <p className="font-body text-lg md:text-xl text-near-black mb-6 leading-relaxed">
-                The hilarious bluffing card game where you play smelly animals face-down and dare
-                your family to call your bluff. Will they sniff out your lie — or hold their nose
-                and trust you?
+                Outbluff your farmyard rivals to win! Be the first player to ditch all your cards by bluffing like a boss, busting others' bluffs, and scheming with action cards.
               </p>
 
               {/* Stats row */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–8" />
-                <StatBadge icon="🎂" label="Ages" value="7+" />
-                <StatBadge icon="⏱️" label="Minutes" value="20–40" />
+                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–6" />
+                <StatBadge icon="🎂" label="Ages" value="6–100" />
+                <StatBadge icon="⏱️" label="Minutes" value="15–30" />
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 items-start">
@@ -64,7 +62,7 @@ export default function HomePage() {
               </div>
 
               <p className="font-body text-sm text-gray-500 mt-3">
-                + shipping · Made in the USA · Ages 7+
+                + shipping · Made in the USA
               </p>
             </div>
 
@@ -83,7 +81,7 @@ export default function HomePage() {
                 </div>
                 {/* Floating animal badge */}
                 <div className="absolute -bottom-4 -right-4 bg-hay-gold text-white font-headline text-lg px-4 py-2 rounded-full shadow-lg border-2 border-white rotate-6">
-                  65 Cards! 🐄
+                  New for 2026 🆕
                 </div>
               </div>
             </div>
@@ -110,7 +108,7 @@ export default function HomePage() {
                 step: '1',
                 icon: '🃏',
                 title: 'Play a Card Face-Down',
-                desc: 'Announce what animal you\'re playing — but you can totally lie. Who\'s going to stop you?',
+                desc: 'Announce what animal you\'re playing — but you can totally bluff. Who\'s going to stop you?',
               },
               {
                 step: '2',
@@ -122,7 +120,7 @@ export default function HomePage() {
                 step: '3',
                 icon: '💨',
                 title: 'Someone Stinks!',
-                desc: 'If you\'re caught bluffing, you take the pile. If the challenger was wrong, they do. Last one standing wins!',
+                desc: 'If you\'re caught bluffing, you take the pile. If the challenger was wrong, they do. First one to ditch all cards wins!',
               },
             ].map((item) => (
               <div
@@ -160,7 +158,7 @@ export default function HomePage() {
               Meet the Farmyard 🐄🐔🐷
             </h2>
             <p className="font-body text-lg text-gray-600">
-              65 cards featuring hilarious animals, action cards, and stink-packed surprises.
+              62 cards featuring hilarious animals, action cards, and stink-packed surprises.
             </p>
           </div>
 
@@ -233,9 +231,7 @@ export default function HomePage() {
             Born from Real Farmyard Chaos
           </h2>
           <p className="font-body text-xl leading-relaxed mb-8 text-red-100">
-            A dad cleaned up after four boys for years. One day he thought: what if the mess
-            became the game? Stink Farm was born at the kitchen table and tested by the most
-            ruthless critics he knows — his own kids.
+            Stink Farm started as a simple idea: take the bluffing mechanics everyone loves from classic card games, give them a farmyard makeover, and make them work for the whole family. Mike O'Reilly designed it at home, and his kids were the first playtesters. After rounds of rule-tweaking and lots of laughs, Stink Farm was born.
           </p>
           <Link
             href="/about"
@@ -288,7 +284,7 @@ export default function HomePage() {
       <section className="bg-hay-gold py-16 md:py-24">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="font-headline text-4xl md:text-6xl text-white mb-4 drop-shadow-sm">
-            Ready to Stink?
+            Ready to Bluff and Bust 'Em?
           </h2>
           <p className="font-body text-white text-xl mb-8 leading-relaxed">
             Grab your copy today and find out who in your family is the biggest bluffer.
