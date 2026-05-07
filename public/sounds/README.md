@@ -1,0 +1,1 @@
+# Farmyard Sound Files\n\nPlace these MP3 files here:\n- cow-fart.mp3\n- goat-belch.mp3\n- cow-moo.mp3\n- pig-snort.mp3\n- chicken-bluff.mp3\n\nThese are played in rotation when the stink cloud in the hero is clicked.

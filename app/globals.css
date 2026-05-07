@@ -16,10 +16,14 @@
   margin: 0;
 }
 
-html,
+html {
+  max-width: 100vw;
+  /* Note: overflow-x: hidden removed from html to allow sticky positioning to work */
+}
+
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip; /* clip instead of hidden — allows sticky navbar to work */
 }
 
 body {
@@ -76,4 +80,18 @@ html {
 
 .stink-float {
   animation: stink-float 2.5s ease-in-out infinite;
+}
+
+/* Sniffing nose animation for How to Play step 2 */
+@keyframes sniff {
+  0%, 100% { transform: translateX(0) scaleX(1); }
+  20% { transform: translateX(4px) scaleX(1.15); }
+  40% { transform: translateX(-3px) scaleX(0.9); }
+  60% { transform: translateX(3px) scaleX(1.1); }
+  80% { transform: translateX(-2px) scaleX(0.95); }
+}
+
+.sniff-nose {
+  animation: sniff 1.8s ease-in-out infinite;
+  display: inline-block;
 }

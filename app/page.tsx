@@ -1,21 +1,60 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRef } from 'react';
 import { BuyButton } from '@/components/BuyButton';
 import { CardShowcase } from '@/components/CardShowcase';
 import { StatBadge } from '@/components/StatBadge';
 
+const FARM_SOUNDS = [
+  '/sounds/cow-fart.mp3',
+  '/sounds/goat-belch.mp3',
+  '/sounds/cow-moo.mp3',
+  '/sounds/pig-snort.mp3',
+  '/sounds/chicken-bluff.mp3',
+];
+
 export default function HomePage() {
+  const soundIndex = useRef(0);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  function playNextSound() {
+    const src = FARM_SOUNDS[soundIndex.current % FARM_SOUNDS.length];
+    soundIndex.current += 1;
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+    const audio = new Audio(src);
+    audioRef.current = audio;
+    audio.play().catch(() => {/* autoplay policy — silently ignore */});
+  }
+
   return (
     <>
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-cream to-cream-dark relative overflow-hidden">
-        {/* Decorative stink clouds */}
-        <div
-          className="absolute top-8 right-8 text-6xl opacity-20 stink-float"
-          aria-hidden="true"
+        {/* Decorative stink clouds — click for farmyard sounds! */}
+        <button
+          onClick={playNextSound}
+          className="absolute top-8 right-8 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none"
+          style={{ transform: 'rotate(30deg)', background: 'none', border: 'none', padding: 0 }}
+          aria-label="Click for a farmyard sound"
+          title="Click me! 🤢"
         >
-          💨
-        </div>
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="48" rx="28" ry="18" fill="#7BC47B" fillOpacity="0.85"/>
+            <circle cx="24" cy="44" r="14" fill="#7BC47B" fillOpacity="0.85"/>
+            <circle cx="55" cy="43" r="13" fill="#7BC47B" fillOpacity="0.85"/>
+            <circle cx="38" cy="32" r="16" fill="#8DD08D" fillOpacity="0.9"/>
+            <circle cx="28" cy="35" r="11" fill="#8DD08D" fillOpacity="0.85"/>
+            <circle cx="50" cy="34" r="12" fill="#8DD08D" fillOpacity="0.85"/>
+            <circle cx="38" cy="22" r="9" fill="#A5DCA5" fillOpacity="0.7"/>
+            <circle cx="47" cy="26" r="7" fill="#A5DCA5" fillOpacity="0.65"/>
+            <circle cx="30" cy="28" r="6" fill="#A5DCA5" fillOpacity="0.6"/>
+            <ellipse cx="34" cy="30" rx="7" ry="4" fill="#C5EAC5" fillOpacity="0.5"/>
+          </svg>
+        </button>
         <div
           className="absolute bottom-16 left-4 text-4xl opacity-15 stink-float"
           style={{ animationDelay: '1s' }}
@@ -29,7 +68,7 @@ export default function HomePage() {
             {/* Left: Copy */}
             <div>
               <div className="inline-block bg-hay-gold text-white font-headline text-sm px-4 py-1.5 rounded-full mb-4 shadow-sm">
-                🎉 The Farmyard is Calling!
+                💩 The Farmyard is Calling!
               </div>
               <h1 className="font-headline text-5xl md:text-7xl text-barn-red leading-tight mb-4">
                 Outbluff the
@@ -80,8 +119,13 @@ export default function HomePage() {
                   />
                 </div>
                 {/* Floating animal badge */}
-                <div className="absolute -bottom-4 -right-4 bg-hay-gold text-white font-headline text-lg px-4 py-2 rounded-full shadow-lg border-2 border-white rotate-6">
-                  New for 2026 🆕
+                <div className="absolute -bottom-8 -right-6 flex flex-col items-center gap-1">
+                  <div className="bg-hay-gold text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-white whitespace-nowrap" style={{ transform: 'rotate(-6deg)' }}>
+                    Big Bluffs, Bigger Laughs
+                  </div>
+                  <div className="bg-blue-500 text-white font-headline text-xs px-3 py-1 rounded-full shadow border-2 border-white" style={{ transform: 'rotate(-6deg)' }}>
+                    New in 2026 🆕
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,19 +150,19 @@ export default function HomePage() {
             {[
               {
                 step: '1',
-                icon: '🃏',
+                icon: 'card-back',
                 title: 'Play a Card Face-Down',
                 desc: 'Announce what animal you\'re playing — but you can totally bluff. Who\'s going to stop you?',
               },
               {
                 step: '2',
-                icon: '👃',
+                icon: 'nose-sniff',
                 title: 'Call the Bluff',
                 desc: 'Think your neighbor just played a "Kitten" that smells suspiciously like a Bull? Call it! Flip the card.',
               },
               {
                 step: '3',
-                icon: '💨',
+                icon: '😳',
                 title: 'Someone Stinks!',
                 desc: 'If you\'re caught bluffing, you take the pile. If the challenger was wrong, they do. First one to ditch all cards wins!',
               },
@@ -127,8 +171,22 @@ export default function HomePage() {
                 key={item.step}
                 className="text-center bg-cream rounded-2xl p-8 border-2 border-cream-dark shadow-sm"
               >
-                <div className="text-5xl mb-4" aria-hidden="true">
-                  {item.icon}
+                <div className="text-5xl mb-4 flex justify-center" aria-hidden="true">
+                  {item.icon === 'card-back' ? (
+                    <div className="relative w-14 h-20">
+                      <Image
+                        src="/images/cards/Back of stink and action cards.png"
+                        alt="Stink Farm card back"
+                        fill
+                        className="object-contain rounded-lg shadow-md"
+                        sizes="56px"
+                      />
+                    </div>
+                  ) : item.icon === 'nose-sniff' ? (
+                    <span className="sniff-nose inline-block">👃</span>
+                  ) : (
+                    item.icon
+                  )}
                 </div>
                 <div className="w-10 h-10 bg-barn-red text-white font-headline text-xl rounded-full flex items-center justify-center mx-auto mb-3">
                   {item.step}
