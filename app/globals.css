@@ -82,13 +82,10 @@ html {
   animation: stink-float 2.5s ease-in-out infinite;
 }
 
-/* Green-tinted stink cloud (keeps original 💨 shape, shifts to card-matching green)
-   💨 base hue is ~200° (blue-grey); rotating ~155° lands around 355→ no wait:
-   200 + 155 = 355 (red). 200 + 80 = 280 (purple). 200 - 80 = 120 (green). Use -80deg. */
-.stink-green-cloud {
-  filter: hue-rotate(-80deg) saturate(2) brightness(1.05);
-  transform: rotate(30deg);
+/* Stink cloud SVG wrapper — tilt up-right */
+.stink-cloud-wrap {
   display: inline-block;
+  transform: rotate(-30deg);
 }
 
 /* Sniffing nose animation — expands symmetrically outward from center */

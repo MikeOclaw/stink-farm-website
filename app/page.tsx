@@ -37,12 +37,24 @@ export default function HomePage() {
         {/* Decorative stink clouds — click for farmyard sounds! */}
         <button
           onClick={playNextSound}
-          className="absolute top-8 right-8 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none"
+          className="absolute top-6 right-6 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none stink-cloud-wrap"
           style={{ background: 'none', border: 'none', padding: 0 }}
           aria-label="Click for a farmyard sound"
           title="Click me! 🤢"
         >
-          <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
+          {/* Puke-green stink cloud SVG — matches card art color */}
+          <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="45" cy="56" rx="30" ry="19" fill="#8BBF5A" fillOpacity="0.88"/>
+            <circle cx="27" cy="51" r="15" fill="#8BBF5A" fillOpacity="0.88"/>
+            <circle cx="62" cy="50" r="14" fill="#8BBF5A" fillOpacity="0.88"/>
+            <circle cx="43" cy="38" r="17" fill="#9ECF65" fillOpacity="0.92"/>
+            <circle cx="31" cy="42" r="12" fill="#9ECF65" fillOpacity="0.88"/>
+            <circle cx="57" cy="40" r="13" fill="#9ECF65" fillOpacity="0.88"/>
+            <circle cx="43" cy="25" r="11" fill="#B5DC80" fillOpacity="0.75"/>
+            <circle cx="53" cy="30" r="8" fill="#B5DC80" fillOpacity="0.7"/>
+            <circle cx="33" cy="31" r="8" fill="#B5DC80" fillOpacity="0.65"/>
+            <ellipse cx="38" cy="33" rx="8" ry="5" fill="#CCEA9A" fillOpacity="0.5"/>
+          </svg>
         </button>
         <div
           className="absolute bottom-16 left-4 text-4xl opacity-15 stink-float"
@@ -94,7 +106,8 @@ export default function HomePage() {
 
             {/* Right: Box art */}
             <div className="flex justify-center">
-              <div className="relative">
+              <div className="relative pb-8">
+                <p className="text-center font-body text-xs text-gray-400 mb-2">Made in the USA</p>
                 <div className="relative w-64 md:w-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image
                     src="/images/box/Stink Farm - 2.0 Box Top.png"
@@ -105,8 +118,8 @@ export default function HomePage() {
                     priority
                   />
                 </div>
-                {/* Floating badge + Made in USA */}
-                <div className="absolute -bottom-6 -right-6 flex flex-col items-center gap-1">
+                {/* Floating badges overlapping bottom of box */}
+                <div className="absolute bottom-0 -right-6 flex flex-col items-center gap-1">
                   <div className="bg-hay-gold text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-white whitespace-nowrap" style={{ transform: 'rotate(-6deg)' }}>
                     Big Bluffs, Bigger Laughs
                   </div>
@@ -114,7 +127,6 @@ export default function HomePage() {
                     New in 2026
                   </div>
                 </div>
-                <p className="text-center font-body text-xs text-gray-400 mt-2">Made in the USA</p>
               </div>
             </div>
           </div>
@@ -134,30 +146,36 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {[
               {
                 step: '1',
-                icon: 'card-back',
-                title: 'Play a Card Face-Down',
-                desc: 'Announce what animal you\'re playing — but you can totally bluff. Who\'s going to stop you?',
+                icon: '🃏',
+                title: 'Play Action Cards',
+                desc: 'Before your turn, unleash an action card — block challenges, peek at cards, force a bluff. Chaos is a strategy.',
               },
               {
                 step: '2',
-                icon: 'nose-sniff',
-                title: 'Call the Bluff',
-                desc: 'Think your neighbor just played a "Kitten" that smells suspiciously like a Bull? Call it! Flip the card.',
+                icon: 'card-back',
+                title: 'Play Cards Face-Down',
+                desc: 'Announce what animal you\'re playing — but you can totally bluff. Who\'s going to stop you?',
               },
               {
                 step: '3',
+                icon: 'nose-sniff',
+                title: 'Call the Bluff',
+                desc: 'Watch their face. If their eyes dart, their smile cracks, or they just look guilty — call it! Flip the card.',
+              },
+              {
+                step: '4',
                 icon: '😳',
                 title: 'Someone Stinks!',
-                desc: 'If you\'re caught bluffing, you take the pile. If the challenger was wrong, they do. First one to ditch all cards wins!',
+                desc: 'If you\'re caught bluffing, you take the pile. If the challenger was wrong, they do. First to ditch all cards wins!',
               },
             ].map((item) => (
               <div
                 key={item.step}
-                className="text-center bg-cream rounded-2xl p-8 border-2 border-cream-dark shadow-sm"
+                className="text-center bg-cream rounded-2xl p-6 border-2 border-cream-dark shadow-sm"
               >
                 <div className="text-5xl mb-4 flex justify-center" aria-hidden="true">
                   {item.icon === 'card-back' ? (
@@ -200,8 +218,14 @@ export default function HomePage() {
       <section className="bg-cream-dark py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4">
-              Meet the Farmyard 🐄🐔🐷
+            <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
+              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+                <Image src="/images/cards/Fortified Fence 1.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+              </span>
+              Meet the Farmyard
+              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+                <Image src="/images/cards/Fortified Fence 1.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+              </span>
             </h2>
             <p className="font-body text-lg text-gray-600">
               62 cards featuring hilarious animals, action cards, and stink-packed surprises.
@@ -224,8 +248,14 @@ export default function HomePage() {
       {/* Social Proof */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-12">
-            What the Farmyard is Saying 🌾
+          <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-12 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor 1.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+            </span>
+            What the Farmyard is Saying
+            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor 1.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+            </span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -270,8 +300,10 @@ export default function HomePage() {
       {/* Origin Story Teaser */}
       <section className="bg-barn-red text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="text-5xl mb-6" aria-hidden="true">
-            🌾
+          <div className="flex justify-center mb-6" aria-hidden="true">
+            <span className="relative inline-block w-16 h-16 opacity-90">
+              <Image src="/images/cards/Barn Burner 1.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="64px" />
+            </span>
           </div>
           <h2 className="font-headline text-4xl md:text-5xl mb-6">
             Born from Real Farmyard Chaos
@@ -291,22 +323,24 @@ export default function HomePage() {
       {/* Photo section */}
       <section className="bg-cream-dark py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10">
-            Looks Good. Smells Worse. 📸
+          <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+              <Image src="/images/cards/Stink Sniffer 1.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+            </span>
+            Looks Good. Smells Worse.
+            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+              <Image src="/images/cards/Stink Sniffer 1.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+            </span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              {
-                src: '/images/photos/hand holding cards b.png',
-                alt: 'Player holding Stink Farm cards — choosing their bluff',
-              },
               {
                 src: '/images/photos/4 players cards face up - perspective view.png',
                 alt: 'Four players around the table with Stink Farm cards spread out',
               },
               {
-                src: '/images/photos/Player perspective b.png',
-                alt: 'Player perspective view of a Stink Farm game in progress',
+                src: '/images/photos/hand holding cards b.png',
+                alt: 'Player holding Stink Farm cards — choosing their bluff',
               },
             ].map((photo) => (
               <div

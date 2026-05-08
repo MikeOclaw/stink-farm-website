@@ -20,8 +20,7 @@ export function Footer() {
               <span className="font-headline text-2xl text-hay-gold">Stink Farm</span>
             </div>
             <p className="font-body text-gray-400 text-sm leading-relaxed">
-              The hilarious bluffing card game for the whole farmyard. Outbluff your family
-              or smell the consequences!
+              The hilarious bluffing card game for the whole farmyard. Outbluff your family, because losing stinks!
             </p>
           </div>
 
