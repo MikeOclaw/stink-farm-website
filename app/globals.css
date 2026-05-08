@@ -85,7 +85,7 @@ html {
 /* Stink cloud SVG wrapper — tilt up-right */
 .stink-cloud-wrap {
   display: inline-block;
-  transform: rotate(-30deg);
+  transform: rotate(30deg);
 }
 
 /* Sniffing nose animation — expands symmetrically outward from center */

@@ -106,7 +106,7 @@ export default function HomePage() {
 
             {/* Right: Box art */}
             <div className="flex justify-center">
-              <div className="relative pb-8">
+              <div className="relative">
                 <p className="text-center font-body text-xs text-gray-400 mb-2">Made in the USA</p>
                 <div className="relative w-64 md:w-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image
@@ -118,8 +118,8 @@ export default function HomePage() {
                     priority
                   />
                 </div>
-                {/* Floating badges overlapping bottom of box */}
-                <div className="absolute bottom-0 -right-6 flex flex-col items-center gap-1">
+                {/* Floating badges below box */}
+                <div className="absolute -bottom-16 -right-6 flex flex-col items-center gap-1">
                   <div className="bg-hay-gold text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-white whitespace-nowrap" style={{ transform: 'rotate(-6deg)' }}>
                     Big Bluffs, Bigger Laughs
                   </div>
