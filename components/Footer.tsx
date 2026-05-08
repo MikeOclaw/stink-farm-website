@@ -84,7 +84,7 @@ export function Footer() {
             © {new Date().getFullYear()} Stink Farm. All rights reserved.
           </p>
           <p className="font-body text-gray-500 text-sm">
-            Ages 7+ | 2–8 Players | 20–40 min
+            Ages 6–100 | 2–6 Players | 15–30 min
           </p>
         </div>
       </div>

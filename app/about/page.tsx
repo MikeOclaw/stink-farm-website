@@ -20,7 +20,7 @@ export default function AboutPage() {
             How Stink Farm Was Born
           </h1>
           <p className="font-body text-xl text-gray-600">
-            A dad. Four boys. A kitchen table. And a whole lot of farmyard nonsense.
+            A dad. Four boys. A kitchen table. And a whole lot of farmyard chaos.
           </p>
         </div>
       </section>
@@ -37,16 +37,14 @@ export default function AboutPage() {
 
             <p>
               For years, the family played card games at the kitchen table. Bluffing games were
-              always the favorites — the ones where you could look someone dead in the eye, lie
-              through your teeth, and watch them decide whether to trust you. The chaos. The
+              always the favorites — the ones where you could look someone dead in the eye, dare them to call your bluff, and watch them decide whether to trust you. The chaos. The
               laughter. The moment someone gets caught.
             </p>
 
             <p>
               One night, after one too many rounds of a game that felt like it could be
               funnier, sillier, and more farmyard-appropriate, the idea hit:{' '}
-              <strong>what if the game was about animals? Smelly animals?</strong> What if the
-              stink was part of the point?
+              <strong>what if the game was about animals? Smelly animals?</strong> What if the animals talked smack to each other?
             </p>
 
             <div className="my-8 relative rounded-2xl overflow-hidden shadow-xl border-4 border-cream-dark">

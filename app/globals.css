@@ -82,6 +82,11 @@ html {
   animation: stink-float 2.5s ease-in-out infinite;
 }
 
+/* Green-tinted stink cloud (keeps original 💨 shape, shifts to card-matching green) */
+.stink-green-cloud {
+  filter: hue-rotate(90deg) saturate(1.4) brightness(0.95);
+}
+
 /* Sniffing nose animation for How to Play step 2 */
 @keyframes sniff {
   0%, 100% { transform: translateX(0) scaleX(1); }

@@ -42,18 +42,7 @@ export default function HomePage() {
           aria-label="Click for a farmyard sound"
           title="Click me! 🤢"
         >
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="40" cy="48" rx="28" ry="18" fill="#7BC47B" fillOpacity="0.85"/>
-            <circle cx="24" cy="44" r="14" fill="#7BC47B" fillOpacity="0.85"/>
-            <circle cx="55" cy="43" r="13" fill="#7BC47B" fillOpacity="0.85"/>
-            <circle cx="38" cy="32" r="16" fill="#8DD08D" fillOpacity="0.9"/>
-            <circle cx="28" cy="35" r="11" fill="#8DD08D" fillOpacity="0.85"/>
-            <circle cx="50" cy="34" r="12" fill="#8DD08D" fillOpacity="0.85"/>
-            <circle cx="38" cy="22" r="9" fill="#A5DCA5" fillOpacity="0.7"/>
-            <circle cx="47" cy="26" r="7" fill="#A5DCA5" fillOpacity="0.65"/>
-            <circle cx="30" cy="28" r="6" fill="#A5DCA5" fillOpacity="0.6"/>
-            <ellipse cx="34" cy="30" rx="7" ry="4" fill="#C5EAC5" fillOpacity="0.5"/>
-          </svg>
+          <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
         </button>
         <div
           className="absolute bottom-16 left-4 text-4xl opacity-15 stink-float"
@@ -68,7 +57,7 @@ export default function HomePage() {
             {/* Left: Copy */}
             <div>
               <div className="inline-block bg-hay-gold text-white font-headline text-sm px-4 py-1.5 rounded-full mb-4 shadow-sm">
-                💩 The Farmyard is Calling!
+                🌾 The Farmyard is Calling!
               </div>
               <h1 className="font-headline text-5xl md:text-7xl text-barn-red leading-tight mb-4">
                 Outbluff the
@@ -100,9 +89,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <p className="font-body text-sm text-gray-500 mt-3">
-                + shipping · Made in the USA
-              </p>
+
             </div>
 
             {/* Right: Box art */}
@@ -118,15 +105,16 @@ export default function HomePage() {
                     priority
                   />
                 </div>
-                {/* Floating animal badge */}
-                <div className="absolute -bottom-8 -right-6 flex flex-col items-center gap-1">
+                {/* Floating badge + Made in USA */}
+                <div className="absolute -bottom-16 -right-6 flex flex-col items-center gap-1">
                   <div className="bg-hay-gold text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-white whitespace-nowrap" style={{ transform: 'rotate(-6deg)' }}>
                     Big Bluffs, Bigger Laughs
                   </div>
                   <div className="bg-blue-500 text-white font-headline text-xs px-3 py-1 rounded-full shadow border-2 border-white" style={{ transform: 'rotate(-6deg)' }}>
-                    New in 2026 🆕
+                    New in 2026
                   </div>
                 </div>
+                <p className="text-center font-body text-xs text-gray-400 mt-2">🇺🇸 Made in the USA</p>
               </div>
             </div>
           </div>
