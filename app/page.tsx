@@ -324,13 +324,12 @@ export default function HomePage() {
       <section className="bg-cream-dark py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
-            {/* TODO: swap to /images/animals/Stink Sniffer.png once art-only file is uploaded */}
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
             </span>
             Looks Good. Smells Worse.
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
