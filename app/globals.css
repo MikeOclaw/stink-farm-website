@@ -82,10 +82,12 @@ html {
   animation: stink-float 2.5s ease-in-out infinite;
 }
 
-/* Stink cloud SVG wrapper — tilt up-right */
-.stink-cloud-wrap {
-  display: inline-block;
+/* Stink cloud — puke green tint + tilt up-right */
+.stink-green-cloud {
+  /* sepia neutralizes blue base, hue-rotate pushes yellow-green, saturate = puke green */
+  filter: sepia(1) hue-rotate(60deg) saturate(4) brightness(0.85);
   transform: rotate(30deg);
+  display: inline-block;
 }
 
 /* Sniffing nose animation — expands symmetrically outward from center */

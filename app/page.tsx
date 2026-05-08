@@ -37,24 +37,12 @@ export default function HomePage() {
         {/* Decorative stink clouds — click for farmyard sounds! */}
         <button
           onClick={playNextSound}
-          className="absolute top-6 right-6 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none stink-cloud-wrap"
+          className="absolute top-8 right-8 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none"
           style={{ background: 'none', border: 'none', padding: 0 }}
           aria-label="Click for a farmyard sound"
           title="Click me! 🤢"
         >
-          {/* Puke-green stink cloud SVG — matches card art color */}
-          <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <ellipse cx="45" cy="56" rx="30" ry="19" fill="#8BBF5A" fillOpacity="0.88"/>
-            <circle cx="27" cy="51" r="15" fill="#8BBF5A" fillOpacity="0.88"/>
-            <circle cx="62" cy="50" r="14" fill="#8BBF5A" fillOpacity="0.88"/>
-            <circle cx="43" cy="38" r="17" fill="#9ECF65" fillOpacity="0.92"/>
-            <circle cx="31" cy="42" r="12" fill="#9ECF65" fillOpacity="0.88"/>
-            <circle cx="57" cy="40" r="13" fill="#9ECF65" fillOpacity="0.88"/>
-            <circle cx="43" cy="25" r="11" fill="#B5DC80" fillOpacity="0.75"/>
-            <circle cx="53" cy="30" r="8" fill="#B5DC80" fillOpacity="0.7"/>
-            <circle cx="33" cy="31" r="8" fill="#B5DC80" fillOpacity="0.65"/>
-            <ellipse cx="38" cy="33" rx="8" ry="5" fill="#CCEA9A" fillOpacity="0.5"/>
-          </svg>
+          <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
         </button>
         <div
           className="absolute bottom-16 left-4 text-4xl opacity-15 stink-float"
