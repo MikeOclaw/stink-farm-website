@@ -82,21 +82,25 @@ html {
   animation: stink-float 2.5s ease-in-out infinite;
 }
 
-/* Green-tinted stink cloud (keeps original 💨 shape, shifts to card-matching green) */
+/* Green-tinted stink cloud (keeps original 💨 shape, shifts to card-matching green)
+   💨 base hue is ~200° (blue-grey); rotating ~155° lands around 355→ no wait:
+   200 + 155 = 355 (red). 200 + 80 = 280 (purple). 200 - 80 = 120 (green). Use -80deg. */
 .stink-green-cloud {
-  filter: hue-rotate(90deg) saturate(1.4) brightness(0.95);
+  filter: hue-rotate(-80deg) saturate(2) brightness(1.05);
+  transform: rotate(30deg);
+  display: inline-block;
 }
 
-/* Sniffing nose animation for How to Play step 2 */
+/* Sniffing nose animation — expands symmetrically outward from center */
 @keyframes sniff {
-  0%, 100% { transform: translateX(0) scaleX(1); }
-  20% { transform: translateX(4px) scaleX(1.15); }
-  40% { transform: translateX(-3px) scaleX(0.9); }
-  60% { transform: translateX(3px) scaleX(1.1); }
-  80% { transform: translateX(-2px) scaleX(0.95); }
+  0%, 100% { transform: scaleX(1); }
+  25% { transform: scaleX(1.35); }
+  50% { transform: scaleX(1); }
+  75% { transform: scaleX(1.2); }
 }
 
 .sniff-nose {
-  animation: sniff 1.8s ease-in-out infinite;
+  animation: sniff 1.6s ease-in-out infinite;
   display: inline-block;
+  transform-origin: center;
 }

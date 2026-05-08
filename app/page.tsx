@@ -38,7 +38,7 @@ export default function HomePage() {
         <button
           onClick={playNextSound}
           className="absolute top-8 right-8 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none"
-          style={{ transform: 'rotate(30deg)', background: 'none', border: 'none', padding: 0 }}
+          style={{ background: 'none', border: 'none', padding: 0 }}
           aria-label="Click for a farmyard sound"
           title="Click me! 🤢"
         >
@@ -106,7 +106,7 @@ export default function HomePage() {
                   />
                 </div>
                 {/* Floating badge + Made in USA */}
-                <div className="absolute -bottom-16 -right-6 flex flex-col items-center gap-1">
+                <div className="absolute -bottom-6 -right-6 flex flex-col items-center gap-1">
                   <div className="bg-hay-gold text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-white whitespace-nowrap" style={{ transform: 'rotate(-6deg)' }}>
                     Big Bluffs, Bigger Laughs
                   </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
                     New in 2026
                   </div>
                 </div>
-                <p className="text-center font-body text-xs text-gray-400 mt-2">🇺🇸 Made in the USA</p>
+                <p className="text-center font-body text-xs text-gray-400 mt-2">Made in the USA</p>
               </div>
             </div>
           </div>
