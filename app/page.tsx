@@ -303,13 +303,14 @@ export default function HomePage() {
       {/* Origin Story Teaser */}
       <section className="bg-barn-red text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="flex justify-center mb-6" aria-hidden="true">
-            <span className="relative inline-block w-16 h-16 opacity-90">
-              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="64px" />
+          <h2 className="font-headline text-4xl md:text-5xl mb-6 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12 opacity-90" aria-hidden="true">
+              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply', transform: 'scaleX(-1)' }} sizes="48px" />
             </span>
-          </div>
-          <h2 className="font-headline text-4xl md:text-5xl mb-6">
             Born from Real Farmyard Chaos
+            <span className="relative inline-block w-12 h-12 opacity-90" aria-hidden="true">
+              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply' }} sizes="48px" />
+            </span>
           </h2>
           <p className="font-body text-xl leading-relaxed mb-8 text-red-100">
             Stink Farm started as a simple idea: take the bluffing mechanics everyone loves from classic card games, give them a farmyard makeover, and make them work for the whole family. Mike O'Reilly designed it at home, and his kids were the first playtesters. After rounds of rule-tweaking and lots of laughs, Stink Farm was born.
