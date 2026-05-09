@@ -124,11 +124,11 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
               <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0)', transform: 'scaleX(-1)' }} sizes="40px" />
+                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
               </span>
               How to Play
               <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0)' }} sizes="40px" />
+                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" sizes="40px" />
               </span>
             </h2>
             <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
@@ -329,11 +329,11 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)', mixBlendMode: 'multiply' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
             </span>
             Looks Good. Smells Worse.
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
