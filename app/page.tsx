@@ -8,11 +8,14 @@ import { CardShowcase } from '@/components/CardShowcase';
 import { StatBadge } from '@/components/StatBadge';
 
 const FARM_SOUNDS = [
-  '/sounds/cow-fart.mp3',
-  '/sounds/goat-belch.mp3',
-  '/sounds/cow-moo.mp3',
-  '/sounds/pig-snort.mp3',
-  '/sounds/chicken-bluff.mp3',
+  '/sounds/fart.mp3',
+  '/sounds/cow.mp3',
+  '/sounds/burp.mp3',
+  '/sounds/pig.mp3',
+  '/sounds/fart-b.mp3',
+  '/sounds/chicken.mp3',
+  '/sounds/flies.mp3',
+  '/sounds/goat.mp3',
 ];
 
 export default function HomePage() {

@@ -86,7 +86,7 @@ html {
 .stink-green-cloud {
   /* sepia kills blue base, hue-rotate into yellow-green, saturate/brightness = muted puke green */
   filter: sepia(1) hue-rotate(60deg) saturate(2.5) brightness(0.7) grayscale(0.2);
-  transform: rotate(30deg);
+  transform: rotate(-30deg);
   display: inline-block;
 }
 
