@@ -118,6 +118,51 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Photo section */}
+      <section className="bg-cream-dark py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-3 flex items-center justify-center gap-3">
+              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
+              </span>
+              Cards fly. Bluffs die. Stink piles high.
+              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
+              </span>
+            </h2>
+            <p className="font-body text-lg text-gray-600">
+              Hilarious cards, bad poker faces, great memories.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              {
+                src: '/images/photos/4 players cards face up - perspective view.png',
+                alt: 'Four players around the table with Stink Farm cards spread out',
+              },
+              {
+                src: '/images/photos/hand holding cards b.png',
+                alt: 'Player holding Stink Farm cards — choosing their bluff',
+              },
+            ].map((photo) => (
+              <div
+                key={photo.src}
+                className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]"
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* How to Play (summary) */}
       <section id="how-to-play" className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
@@ -321,46 +366,6 @@ export default function HomePage() {
           >
             Read the Full Story →
           </Link>
-        </div>
-      </section>
-
-      {/* Photo section */}
-      <section className="bg-cream-dark py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
-            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
-            </span>
-            Looks Good. Smells Worse.
-            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
-            </span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              {
-                src: '/images/photos/4 players cards face up - perspective view.png',
-                alt: 'Four players around the table with Stink Farm cards spread out',
-              },
-              {
-                src: '/images/photos/hand holding cards b.png',
-                alt: 'Player holding Stink Farm cards — choosing their bluff',
-              },
-            ].map((photo) => (
-              <div
-                key={photo.src}
-                className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]"
-              >
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
