@@ -45,7 +45,7 @@ export default function HomePage() {
           aria-label="Click for a farmyard sound"
         >
           <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
-          <p className="text-xs font-body text-gray-500 mt-1 text-center">Click me 😄</p>
+          <p className="text-xs font-body text-gray-500 mt-1 text-center">Click me 🤭</p>
         </button>
 
 
@@ -78,12 +78,7 @@ export default function HomePage() {
                   source="homepage-hero"
                   className="bg-barn-red text-white hover:bg-barn-red-dark"
                 />
-                <Link
-                  href="/how-to-play"
-                  className="font-body font-semibold text-barn-red border-2 border-barn-red px-8 py-4 rounded-full hover:bg-barn-red hover:text-white transition-colors text-center"
-                >
-                  How to Play ↓
-                </Link>
+
               </div>
 
 
@@ -119,10 +114,10 @@ export default function HomePage() {
       </section>
 
       {/* Photo section */}
-      <section className="bg-cream-dark py-16 md:py-24">
+      <section className="bg-hay-gold py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-3 flex items-center justify-center gap-3">
+            <h2 className="font-headline text-4xl md:text-5xl text-white mb-3 flex items-center justify-center gap-3">
               <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
                 <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
               </span>
@@ -131,7 +126,7 @@ export default function HomePage() {
                 <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
               </span>
             </h2>
-            <p className="font-body text-lg text-gray-600">
+            <p className="font-body text-lg text-white opacity-90">
               Hilarious cards, goofy poker faces, great memories.
             </p>
           </div>
