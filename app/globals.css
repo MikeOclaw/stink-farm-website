@@ -103,3 +103,31 @@ html {
   display: inline-block;
   transform-origin: center;
 }
+
+/* Card placement animation — subtle shift and settle */
+@keyframes card-place {
+  0%   { transform: rotate(-4deg) translateY(0px); }
+  30%  { transform: rotate(2deg) translateY(-6px); }
+  60%  { transform: rotate(-1deg) translateY(3px); }
+  80%  { transform: rotate(0.5deg) translateY(-2px); }
+  100% { transform: rotate(0deg) translateY(0px); }
+}
+
+.card-place {
+  animation: card-place 2.8s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Shame bow — emoji bows its head in shame */
+@keyframes shame-bow {
+  0%, 60%, 100% { transform: rotate(0deg) translateY(0); }
+  70%  { transform: rotate(20deg) translateY(4px); }
+  85%  { transform: rotate(18deg) translateY(4px); }
+  95%  { transform: rotate(20deg) translateY(4px); }
+}
+
+.shame-bow {
+  animation: shame-bow 3.5s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: bottom center;
+}

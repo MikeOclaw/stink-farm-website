@@ -46,14 +46,9 @@ export default function HomePage() {
           title="Click me! 🤢"
         >
           <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
+          <p className="text-xs font-body text-gray-500 mt-1 text-center">Click me 😄</p>
         </button>
-        <div
-          className="absolute bottom-16 left-4 text-4xl opacity-15 stink-float"
-          style={{ animationDelay: '1s' }}
-          aria-hidden="true"
-        >
-          💨
-        </div>
+
 
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -141,7 +136,7 @@ export default function HomePage() {
             {[
               {
                 step: '1',
-                icon: '🃏',
+                icon: 'plop-plow',
                 title: 'Play Action Cards',
                 desc: 'Before your turn, unleash an action card — block challenges, peek at cards, force a bluff. Chaos is a strategy.',
               },
@@ -169,8 +164,18 @@ export default function HomePage() {
                 className="text-center bg-cream rounded-2xl p-6 border-2 border-cream-dark shadow-sm"
               >
                 <div className="text-5xl mb-4 flex justify-center" aria-hidden="true">
-                  {item.icon === 'card-back' ? (
-                    <div className="relative w-14 h-20">
+                  {item.icon === 'plop-plow' ? (
+                    <div className="relative w-14 h-20 card-place">
+                      <Image
+                        src="/images/cards/Plop Plow 1.png"
+                        alt="Plop Plow action card"
+                        fill
+                        className="object-contain rounded-lg shadow-md"
+                        sizes="56px"
+                      />
+                    </div>
+                  ) : item.icon === 'card-back' ? (
+                    <div className="relative w-14 h-20 card-place" style={{ animationDelay: '0.4s' }}>
                       <Image
                         src="/images/cards/Back of stink and action cards.png"
                         alt="Stink Farm card back"
@@ -181,6 +186,8 @@ export default function HomePage() {
                     </div>
                   ) : item.icon === 'nose-sniff' ? (
                     <span className="sniff-nose inline-block">👃</span>
+                  ) : item.icon === '😳' ? (
+                    <span className="shame-bow inline-block">😳</span>
                   ) : (
                     item.icon
                   )}
@@ -211,11 +218,11 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
               <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
               </span>
               Meet the Farmyard
               <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" sizes="40px" />
               </span>
             </h2>
             <p className="font-body text-lg text-gray-600">
@@ -240,12 +247,12 @@ export default function HomePage() {
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-12 flex items-center justify-center gap-3">
-            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+            <span className="relative inline-block w-10 h-10 opacity-90" aria-hidden="true">
+              <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="40px" />
             </span>
             What the Farmyard is Saying
-            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+            <span className="relative inline-block w-10 h-10 opacity-90" aria-hidden="true">
+              <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="40px" />
             </span>
           </h2>
 
@@ -316,11 +323,11 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
             </span>
             Looks Good. Smells Worse.
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
