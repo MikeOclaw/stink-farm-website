@@ -132,7 +132,7 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="font-body text-lg text-gray-600">
-              Hilarious cards, bad poker faces, great memories.
+              Hilarious cards, goofy poker faces, great memories.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -177,7 +177,7 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
-              It's part bluff, part dare, all farmyard chaos. Simple enough for kids, sneaky
+              It's part bluff, part dare, all farmyard chaos. Simple enough for kids, strategic
               enough for adults.
             </p>
           </div>
@@ -188,13 +188,13 @@ export default function HomePage() {
                 step: '1',
                 icon: 'plop-plow',
                 title: 'Play Action Cards',
-                desc: 'Before your turn, unleash an action card — block challenges, peek at cards, force a bluff. Chaos is a strategy.',
+                desc: 'Unleash action cards — block challenges, peek at cards, force a bluff. Chaos is a strategy.',
               },
               {
                 step: '2',
                 icon: 'card-back',
                 title: 'Play Cards Face-Down',
-                desc: 'Announce what animal you\'re playing — but you can totally bluff. Who\'s going to stop you?',
+                desc: 'Announce what animal you\'re playing — but you can totally bluff. See if anyone\'s daring enough to stop you!',
               },
               {
                 step: '3',
@@ -322,7 +322,7 @@ export default function HomePage() {
               },
               {
                 quote:
-                  'My 8-year-old beat all the adults. Multiple times. With zero shame. 10/10.',
+                  'Our 8-year-old looked us dead in the eyes and bluffed us all. Repeatedly. We\'re still processing. 10/10.',
                 name: 'The Johnson Family',
                 detail: 'Playtester family',
               },
