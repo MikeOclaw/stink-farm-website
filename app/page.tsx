@@ -43,7 +43,6 @@ export default function HomePage() {
           className="absolute top-8 right-8 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none"
           style={{ background: 'none', border: 'none', padding: 0 }}
           aria-label="Click for a farmyard sound"
-          title="Click me! 🤢"
         >
           <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
           <p className="text-xs font-body text-gray-500 mt-1 text-center">Click me 😄</p>
@@ -55,7 +54,7 @@ export default function HomePage() {
             {/* Left: Copy */}
             <div>
               <div className="inline-block bg-hay-gold text-white font-headline text-sm px-4 py-1.5 rounded-full mb-4 shadow-sm">
-                🌾 The Farmyard is Calling!
+                The Farmyard is Calling!
               </div>
               <h1 className="font-headline text-5xl md:text-7xl text-barn-red leading-tight mb-4">
                 Outbluff the
@@ -123,8 +122,14 @@ export default function HomePage() {
       <section id="how-to-play" className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4">
+            <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
+              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0)', transform: 'scaleX(-1)' }} sizes="40px" />
+              </span>
               How to Play
+              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0)' }} sizes="40px" />
+              </span>
             </h2>
             <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
               It's part bluff, part dare, all farmyard chaos. Simple enough for kids, sneaky
@@ -247,12 +252,12 @@ export default function HomePage() {
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-12 flex items-center justify-center gap-3">
-            <span className="relative inline-block w-10 h-10 opacity-90" aria-hidden="true">
-              <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="40px" />
+            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
             </span>
             What the Farmyard is Saying
-            <span className="relative inline-block w-10 h-10 opacity-90" aria-hidden="true">
-              <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="40px" />
+            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" sizes="40px" />
             </span>
           </h2>
 
@@ -323,11 +328,11 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)', mixBlendMode: 'multiply' }} sizes="40px" />
             </span>
             Looks Good. Smells Worse.
             <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply' }} sizes="40px" />
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
