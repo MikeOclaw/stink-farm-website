@@ -311,7 +311,7 @@ export default function HomePage() {
               },
               {
                 quote:
-                  'We played this for two hours straight at our last game night. My kids are still arguing about who bluffed the best.',
+                  'We played this for two hours straight at our last game night. My kids are still debating who\'s the better bluffer.',
                 name: 'Sarah T.',
                 detail: 'Mom of 3, Iowa',
               },
