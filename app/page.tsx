@@ -305,6 +305,12 @@ export default function HomePage() {
             {[
               {
                 quote:
+                  'Our 8-year-old looked us dead in the eyes and bluffed us all. Repeatedly. We\'re still processing. 10/10.',
+                name: 'The Johnson Family',
+                detail: 'Playtester family',
+              },
+              {
+                quote:
                   'We played this for two hours straight at our last game night. My kids are still arguing about who bluffed the best.',
                 name: 'Sarah T.',
                 detail: 'Mom of 3, Iowa',
@@ -314,12 +320,6 @@ export default function HomePage() {
                   "If you love Liar's Dice or Bluff — this is the family version you've been waiting for. So much fun.",
                 name: 'Marcus D.',
                 detail: 'Poker player & dad',
-              },
-              {
-                quote:
-                  'Our 8-year-old looked us dead in the eyes and bluffed us all. Repeatedly. We\'re still processing. 10/10.',
-                name: 'The Johnson Family',
-                detail: 'Playtester family',
               },
             ].map((testimonial, i) => (
               <blockquote
