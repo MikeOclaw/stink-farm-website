@@ -118,12 +118,12 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="font-headline text-4xl md:text-5xl text-white mb-3 flex items-center justify-center gap-3">
-              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
+              <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
               </span>
               Cards fly. Bluffs die. Stink piles high.
-              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="40px" />
+              <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="56px" />
               </span>
             </h2>
             <p className="font-body text-lg text-white opacity-90">
@@ -163,12 +163,12 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
-              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
+              <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
               </span>
               How to Play
-              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" sizes="40px" />
+              <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+                <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" sizes="56px" />
               </span>
             </h2>
             <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
@@ -262,12 +262,12 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
-              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
+              <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
               </span>
               Meet the Farmyard
-              <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" sizes="40px" />
+              <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+                <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" sizes="56px" />
               </span>
             </h2>
             <p className="font-body text-lg text-gray-600">
@@ -292,12 +292,12 @@ export default function HomePage() {
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-barn-red text-center mb-12 flex items-center justify-center gap-3">
-            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="40px" />
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
             </span>
             What the Farmyard is Saying
-            <span className="relative inline-block w-10 h-10 opacity-80" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" sizes="40px" />
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" sizes="56px" />
             </span>
           </h2>
 
@@ -344,12 +344,12 @@ export default function HomePage() {
       <section className="bg-barn-red text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="font-headline text-4xl md:text-5xl mb-6 flex items-center justify-center gap-3">
-            <span className="relative inline-block w-12 h-12 opacity-90" aria-hidden="true">
-              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply', transform: 'scaleX(-1)' }} sizes="48px" />
+            <span className="relative inline-block w-14 h-14 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply', transform: 'scaleX(-1)' }} sizes="56px" />
             </span>
             Born from Real Farmyard Chaos
-            <span className="relative inline-block w-12 h-12 opacity-90" aria-hidden="true">
-              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply' }} sizes="48px" />
+            <span className="relative inline-block w-14 h-14 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Barn Burner.png" alt="" fill className="object-contain" style={{ mixBlendMode: 'multiply' }} sizes="56px" />
             </span>
           </h2>
           <p className="font-body text-xl leading-relaxed mb-8 text-red-100">
