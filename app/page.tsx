@@ -119,11 +119,11 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <h2 className="font-headline text-4xl md:text-5xl text-white mb-3 flex items-center justify-center gap-3">
               <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
-                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
+                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
               </span>
               Cards fly. Bluffs die. Stink piles high.
               <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
-                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="56px" />
+                <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="56px" />
               </span>
             </h2>
             <p className="font-body text-lg text-white opacity-90">
