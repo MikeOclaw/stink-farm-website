@@ -112,7 +112,7 @@ export default function HowToPlayPage() {
                   Any other player can shout <strong>"That Stinks!", "Cow Pie!", or "Bluff!"</strong> to challenge your cards.
                 </p>
                 <p className="font-body text-gray-600 leading-relaxed">
-                  You can only call a bluff until the next player's turn. The cards are flipped face-up to reveal the truth.
+                  The cards are flipped face-up to reveal the truth.
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function HowToPlayPage() {
                   <strong>If you were truthful:</strong> The challenger Scoops the Pile instead.
                 </p>
                 <p className="font-body text-gray-600 leading-relaxed">
-                  <strong>Important:</strong> You cannot play a different number of cards than you declared. If you declare "2 Bulls" but only 1 card is face-down, you automatically Scoop the Pile.
+                  If busted, you Scoop the Pile.
                 </p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function HowToPlayPage() {
             <strong>First player to play ALL their cards wins!</strong>
           </p>
           <p className="font-body text-lg leading-relaxed opacity-90">
-            If you go out on a bluff and get called, you Scoop the Pile and keep playing. Your last card can be a Stink Card or an Action Card.
+            If you go out on a bluff and get called, you Scoop the Pile and keep playing.
           </p>
         </div>
       </section>
@@ -173,17 +173,8 @@ export default function HowToPlayPage() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-headline text-4xl text-barn-red mb-4 text-center flex items-center justify-center gap-4">
-            <div className="relative w-12 h-16 flex-shrink-0">
-              <Image
-                src="/images/cards/Back of stink and action cards.png"
-                alt=""
-                fill
-                className="object-contain"
-                sizes="48px"
-              />
-            </div>
             Card Types
-            <div className="relative w-12 h-16 flex-shrink-0">
+            <div className="relative w-12 h-16 flex-shrink-0 rounded-md shadow-md overflow-hidden border border-gray-200">
               <Image
                 src="/images/cards/Back of stink and action cards.png"
                 alt=""
@@ -270,7 +261,7 @@ export default function HowToPlayPage() {
               },
               {
                 title: 'Watch Your Opponents',
-                desc: "Do they hesitate before playing? Are they holding back certain cards? That's your bluff-calling clue.",
+                desc: "Do they hesitate before playing? Do they look nervous or guilty? That's your bluff-calling clue.",
               },
               {
                 title: 'Bluff with Confidence',
@@ -278,7 +269,7 @@ export default function HowToPlayPage() {
               },
               {
                 title: 'Read Their Action Cards',
-                desc: "Pay attention to when and how opponents play Action Cards — it can signal a bluff is coming. Someone holding onto theirs might be setting up a big one.",
+                desc: "Pay attention to when and how opponents play Action Cards — it can signal a bluff is coming.",
               },
             ].map((tip, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 border border-cream-dark">
@@ -295,7 +286,7 @@ export default function HowToPlayPage() {
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="font-headline text-4xl text-white mb-4">Ready to Bluff and Bust 'Em?</h2>
           <p className="font-body text-white text-lg mb-8">
-            Grab your copy and start the farmyard chaos.
+            Grab your copy and let the family bluff-off begin.
           </p>
           <BuyButton
             label="Pre-Order Now — $19.99"
