@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { BuyButton } from '@/components/BuyButton';
+import { StatBadge } from '@/components/StatBadge';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -27,22 +28,10 @@ export default function HowToPlayPage() {
       {/* Quick Facts */}
       <section className="bg-white py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-cream rounded-2xl p-6 border border-cream-dark text-center">
-              <div className="text-4xl mb-2">👥</div>
-              <p className="font-headline text-2xl text-barn-red mb-1">2–6 Players</p>
-              <p className="font-body text-sm text-gray-600">Ages 6–100</p>
-            </div>
-            <div className="bg-cream rounded-2xl p-6 border border-cream-dark text-center">
-              <div className="text-4xl mb-2">⏱️</div>
-              <p className="font-headline text-2xl text-barn-red mb-1">15–30 Minutes</p>
-              <p className="font-body text-sm text-gray-600">Quick and chaotic</p>
-            </div>
-            <div className="bg-cream rounded-2xl p-6 border border-cream-dark text-center">
-              <div className="text-4xl mb-2">🐄</div>
-              <p className="font-headline text-2xl text-barn-red mb-1">62 Cards</p>
-              <p className="font-body text-sm text-gray-600">46 Stink + 16 Action</p>
-            </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–6" />
+            <StatBadge icon="🎂" label="Ages" value="6–100" />
+            <StatBadge icon="⏱️" label="Minutes" value="15–30" />
           </div>
         </div>
       </section>
@@ -88,7 +77,7 @@ export default function HowToPlayPage() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-headline text-4xl text-barn-red mb-10 text-center">
-            How to Play 🎮
+            How to Play ▶️
           </h2>
 
           <div className="space-y-6">
@@ -100,7 +89,7 @@ export default function HowToPlayPage() {
                   Play <strong>1–4 cards</strong> face-down to the center (the Stink Stack). In a 2–3 player game, play <strong>1–3 cards</strong>.
                 </p>
                 <p className="font-body text-gray-600 leading-relaxed">
-                  <strong>Declare the quantity and current animal/letter.</strong> For example: "2 Bulls" or "3 Js". You must follow the alphabetical order: Alpaca → Bull → Chicken → Duck → Elephant → Ferret → Goat → Hog → Insect → Jackalope → Kitten → (back to Alpaca).
+                  <strong>Declare the quantity and current animal/letter.</strong> For example: "2 Bulls" or "3 Js". You must follow the alphabetical order: Alpaca → Bull → Chicken → Duck → Elk → Fish → Goat → Hog → Insect → Jackrabbit → Kitten → (back to Alpaca).
                 </p>
               </div>
             </div>
@@ -172,7 +161,7 @@ export default function HowToPlayPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="font-headline text-4xl md:text-5xl mb-6">🏆 Winning</h2>
           <p className="font-body text-xl leading-relaxed mb-4">
-            <strong>First player to play ALL their cards without getting busted wins!</strong>
+            <strong>First player to play ALL their cards wins!</strong>
           </p>
           <p className="font-body text-lg leading-relaxed opacity-90">
             If you go out on a bluff and get called, you Scoop the Pile and keep playing. Your last card can be a Stink Card or an Action Card.
@@ -183,33 +172,85 @@ export default function HowToPlayPage() {
       {/* Card Types */}
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-headline text-4xl text-barn-red mb-4 text-center">
-            Card Types 🐄
+          <h2 className="font-headline text-4xl text-barn-red mb-4 text-center flex items-center justify-center gap-4">
+            <div className="relative w-12 h-16 flex-shrink-0">
+              <Image
+                src="/images/cards/Back of stink and action cards.png"
+                alt=""
+                fill
+                className="object-contain"
+                sizes="48px"
+              />
+            </div>
+            Card Types
+            <div className="relative w-12 h-16 flex-shrink-0">
+              <Image
+                src="/images/cards/Back of stink and action cards.png"
+                alt=""
+                fill
+                className="object-contain"
+                sizes="48px"
+              />
+            </div>
           </h2>
 
           <div className="space-y-6 mt-10">
-            <div className="bg-cream rounded-2xl p-8 border border-cream-dark">
-              <h3 className="font-headline text-2xl text-barn-red mb-3">🐄 Stink Cards (46 cards)</h3>
-              <p className="font-body text-gray-600 leading-relaxed mb-3">
-                <strong>11 farm animals, A–K, 4 of each + 2 Wilds.</strong> The main cards you play face-down while declaring which animal. Animals: Alpaca, Bull, Chicken, Duck, Elephant, Ferret, Goat, Hog, Insect, Jackalope, Kitten.
-              </p>
-              <p className="font-body text-gray-600">
-                <strong>Wild Cards count as any animal</strong> — the ultimate bluffing tool if you don't have what you need.
-              </p>
+            <div className="bg-cream rounded-2xl p-8 border border-cream-dark flex gap-6 items-start">
+              <div className="relative flex-shrink-0 w-20 h-28">
+                <Image
+                  src="/images/cards/Duck 1.png"
+                  alt="Stink Card example"
+                  fill
+                  className="object-contain"
+                  sizes="80px"
+                />
+              </div>
+              <div>
+                <h3 className="font-headline text-2xl text-barn-red mb-3">Stink Cards (46 cards)</h3>
+                <p className="font-body text-gray-600 leading-relaxed mb-3">
+                  <strong>11 farm animals, A–K, 4 of each + 2 Wilds.</strong> The main cards you play face-down while declaring which animal. Animals: Alpaca, Bull, Chicken, Duck, Elk, Fish, Goat, Hog, Insect, Jackrabbit, Kitten.
+                </p>
+                <p className="font-body text-gray-600">
+                  <strong>Wild Cards count as any animal</strong> — play them when you need to skip a bluff.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-cream rounded-2xl p-8 border border-cream-dark">
-              <h3 className="font-headline text-2xl text-barn-red mb-3">⚡ Action Cards (16 cards)</h3>
-              <p className="font-body text-gray-600 leading-relaxed">
-                Special cards with powers: Block challenges, force others to call bluffs, clear the pile, peek at cards, gift cards, and more. Play them face-up in the Farmyard Dump before playing your Stink Cards.
-              </p>
+            <div className="bg-cream rounded-2xl p-8 border border-cream-dark flex gap-6 items-start">
+              <div className="relative flex-shrink-0 w-20 h-28">
+                <Image
+                  src="/images/cards/Bale Blocker 1.png"
+                  alt="Action Card example"
+                  fill
+                  className="object-contain"
+                  sizes="80px"
+                />
+              </div>
+              <div>
+                <h3 className="font-headline text-2xl text-barn-red mb-3">⚡ Action Cards (16 cards)</h3>
+                <p className="font-body text-gray-600 leading-relaxed">
+                  Special cards with powers: Block challenges, force others to call bluffs, clear the pile, peek at cards, gift cards, and more. Play them face-up in the Farmyard Dump before playing your Stink Cards.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-cream rounded-2xl p-8 border border-cream-dark">
-              <h3 className="font-headline text-2xl text-barn-red mb-3">📋 Cheat Sheets (6 included)</h3>
-              <p className="font-body text-gray-600 leading-relaxed">
-                Reference cards that list all animals (A–K) and all Action Cards. Keep one near each player so nobody forgets what animal comes next.
-              </p>
+            <div className="bg-cream rounded-2xl p-8 border border-cream-dark flex gap-6 items-start">
+              <div className="relative flex-shrink-0 w-20 h-28">
+                <Image
+                  src="/images/cards/Cheat sheet side A.png"
+                  alt="Cheat Sheet"
+                  fill
+                  className="object-contain"
+                  style={{ transform: 'rotate(90deg)' }}
+                  sizes="80px"
+                />
+              </div>
+              <div>
+                <h3 className="font-headline text-2xl text-barn-red mb-3">📋 Cheat Sheets (6 included)</h3>
+                <p className="font-body text-gray-600 leading-relaxed">
+                  Reference cards that list all animals (A–K) and all Action Cards. Keep one near each player so nobody forgets what animal comes next.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -219,13 +260,13 @@ export default function HowToPlayPage() {
       <section className="bg-cream-dark py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-headline text-4xl text-barn-red mb-8 text-center">
-            Pro Bluffing Tips 🧠
+            Pro Bluffing Tips 🕵️
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               {
-                title: 'Track the Animals',
-                desc: 'Use the Cheat Sheet to remember A–K order. Knowing what comes next helps you bluff better.',
+                title: 'Use the Cheat Sheet',
+                desc: 'Use the Cheat Sheet to remember A–K order and plan for future bluffs.',
               },
               {
                 title: 'Watch Your Opponents',
@@ -236,8 +277,8 @@ export default function HowToPlayPage() {
                 desc: 'A confident declaration is half the battle. Say it like you mean it!',
               },
               {
-                title: 'Save Your Action Cards',
-                desc: "Don't burn them early. Hold them for crucial moments when you really need a save.",
+                title: 'Read Their Action Cards',
+                desc: "Pay attention to when and how opponents play Action Cards — it can signal a bluff is coming. Someone holding onto theirs might be setting up a big one.",
               },
             ].map((tip, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 border border-cream-dark">
