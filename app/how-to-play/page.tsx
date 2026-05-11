@@ -218,7 +218,7 @@ export default function HowToPlayPage() {
                 />
               </div>
               <div>
-                <h3 className="font-headline text-2xl text-barn-red mb-3">⚡ Action Cards (16 cards)</h3>
+                <h3 className="font-headline text-2xl text-barn-red mb-3">Action Cards (16 cards)</h3>
                 <p className="font-body text-gray-600 leading-relaxed">
                   Special cards with powers: Block challenges, force others to call bluffs, clear the pile, peek at cards, gift cards, and more. Play them face-up in the Farmyard Dump before playing your Stink Cards.
                 </p>
@@ -237,7 +237,7 @@ export default function HowToPlayPage() {
                 />
               </div>
               <div>
-                <h3 className="font-headline text-2xl text-barn-red mb-3">📋 Cheat Sheets (6 included)</h3>
+                <h3 className="font-headline text-2xl text-barn-red mb-3">Cheat Sheets (6 included)</h3>
                 <p className="font-body text-gray-600 leading-relaxed">
                   Reference cards that list all animals (A–K) and all Action Cards. Keep one near each player so nobody forgets what animal comes next.
                 </p>
