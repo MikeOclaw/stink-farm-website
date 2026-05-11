@@ -71,7 +71,7 @@ export default function PrivacyPage() {
             <p>
               Order data is retained in Stripe&apos;s systems for as long as required for
               business and legal purposes. You may request deletion of your personal data by
-              contacting us (see Section 7).
+              emailing us at hello@stinkfarmgame.com.
             </p>
           </section>
 
@@ -129,15 +129,8 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="font-headline text-2xl text-near-black mb-3">7. Your Rights</h2>
-            <p>You have the right to:</p>
-            <ul className="list-disc list-inside space-y-1 text-gray-700 mt-2">
-              <li>Request access to data we hold about you</li>
-              <li>Request correction of inaccurate data</li>
-              <li>Request deletion of your personal data</li>
-              <li>Opt out of any marketing communications</li>
-            </ul>
-            <p className="mt-4">
-              To exercise any of these rights, email us at{' '}
+            <p>
+              You can request access to, correction of, or deletion of your personal data at any time by emailing{' '}
               <a
                 href="mailto:hello@stinkfarmgame.com"
                 className="text-barn-red underline"
