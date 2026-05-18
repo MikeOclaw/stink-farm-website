@@ -71,7 +71,7 @@ export default function AboutPage() {
               The first version of Stink Farm was hand-drawn cards at the kitchen table. Rough,
               fast, and immediately hilarious. They loved shouting &ldquo;Cow Pie!&rdquo; to
               bust each other&apos;s bluffs, and ideas for funny animals and awesome action cards
-              were flowing fast. It was clear this thing had something.
+              were flowing fast. Nobody wanted to stop playing.
             </p>
 
             <p>
@@ -105,11 +105,7 @@ export default function AboutPage() {
             <p>
               This is a family game, built by a family, tested on a family. If your family is
               anything like ours, you&apos;re about to find out exactly who the biggest bluffer
-              in the house is.
-            </p>
-
-            <p className="font-semibold text-barn-red">
-              (Spoiler: it&apos;s probably not who you think.)
+              in the house is. (Spoiler: it&apos;s probably not who you think.)
             </p>
           </article>
         </div>
