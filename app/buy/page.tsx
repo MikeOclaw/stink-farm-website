@@ -85,11 +85,11 @@ export default function BuyPage() {
               </p>
 
               {/* Stats */}
-              <div className="flex flex-wrap gap-3 mb-6">
+              <div className="grid grid-cols-4 gap-3 mb-6">
                 <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–6" />
                 <StatBadge icon="🎂" label="Ages" value="6–100" />
                 <StatBadge icon="⏱️" label="Minutes" value="15–30" />
-                <StatBadge icon="🃏" label="Cards" value="62" />
+                <StatBadge icon="🃏" label="Cards" value="62" iconImage="/images/cards/Back of stink and action cards.png" />
               </div>
 
               {/* Price */}
