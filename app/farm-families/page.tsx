@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 
 const ANIMALS = [
   { file: 'Bull 1 (fav 1).png', name: 'Bull', alt: 'Bull character card from Stink Farm' },
-  { file: 'Goat 1 (fav).png', name: 'Goat', alt: 'Goat character card from Stink Farm' },
-  { file: 'Hog 4 (fav 2).png', name: 'Hog', alt: 'Hog character card from Stink Farm' },
   { file: 'Chicken 2 (fav).png', name: 'Chicken', alt: 'Chicken character card from Stink Farm' },
-  { file: 'Duck 2 (fav).png', name: 'Duck', alt: 'Duck character card from Stink Farm' },
-  { file: 'Elk 2 (fav).png', name: 'Elk', alt: 'Elk character card from Stink Farm' },
+  { file: 'Fish 2 (fav 1).png', name: 'Fish', alt: 'Fish character card from Stink Farm' },
+  { file: 'Hog 4 (fav 2).png', name: 'Hog', alt: 'Hog character card from Stink Farm' },
+  { file: 'Insect 1 (fav 1).png', name: 'Insect', alt: 'Insect character card from Stink Farm' },
+  { file: 'Kitten 1 (fav).png', name: 'Kitten', alt: 'Kitten character card from Stink Farm' },
 ];
 
 export default function FarmFamiliesPage() {
@@ -64,9 +64,9 @@ export default function FarmFamiliesPage() {
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–8" />
-                <StatBadge icon="🎂" label="Ages" value="7+" />
-                <StatBadge icon="⏱️" label="Minutes" value="20–40" />
+                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–6" />
+                <StatBadge icon="🎂" label="Ages" value="6–100" />
+                <StatBadge icon="⏱️" label="Minutes" value="15–30" />
               </div>
 
               <BuyButton
@@ -75,12 +75,16 @@ export default function FarmFamiliesPage() {
                 className="bg-barn-red text-white hover:bg-barn-red-dark text-2xl"
               />
               <p className="font-body text-amber-800 text-sm mt-3">
-                + shipping · Made in the USA · Ages 7+
+                + shipping · Ages 6+
               </p>
             </div>
 
             {/* Farm photo */}
             <div className="relative">
+              <p className="text-center font-body text-xs text-amber-900 mb-2 flex items-center justify-center gap-1.5">
+                <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
+                Made in the USA
+              </p>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                 <Image
                   src="/images/photos/4 players cards face up - top view b.png"
@@ -106,7 +110,7 @@ export default function FarmFamiliesPage() {
             Your Favorite Animals Are in the Deck! 🐾
           </h2>
           <p className="font-body text-lg text-gray-600 mb-12">
-            11 farm animals, all playable — and all ready to be lied about with a straight face.
+            62 cards. 11 animals — all ready to be lied about with a straight face.
           </p>
 
           {/* Animal cards on WHITE bg */}
@@ -281,6 +285,10 @@ export default function FarmFamiliesPage() {
           </h2>
           <p className="font-body text-amber-900 text-xl mb-8">
             $19.99 + shipping. Hours of farmyard fun. One seriously smelly good time.
+          </p>
+          <p className="font-body text-amber-800 text-sm mb-6 flex items-center justify-center gap-1.5">
+            <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
+            Proudly made in the USA
           </p>
           <BuyButton
             label="Pre-Order Stink Farm — $19.99"

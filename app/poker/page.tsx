@@ -65,9 +65,9 @@ export default function PokerPage() {
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–8" />
-                <StatBadge icon="🎂" label="Ages" value="7+" />
-                <StatBadge icon="⏱️" label="Minutes" value="20–40" />
+                <StatBadge icon="👨‍👩‍👧‍👦" label="Players" value="2–6" />
+                <StatBadge icon="🎂" label="Ages" value="6–100" />
+                <StatBadge icon="⏱️" label="Minutes" value="15–30" />
               </div>
 
               <BuyButton
@@ -82,6 +82,10 @@ export default function PokerPage() {
 
             {/* Poker-themed photo */}
             <div className="relative">
+              <p className="text-center font-body text-xs text-green-400 mb-2 flex items-center justify-center gap-1.5">
+                <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
+                Made in the USA
+              </p>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-green-700">
                 <Image
                   src="/images/photos/Poker theme - 4 players cards face up - top view.png"
@@ -169,7 +173,7 @@ export default function PokerPage() {
             The Cards 🐄
           </h2>
           <p className="font-body text-gray-400 text-center mb-10">
-            65 cards. 11 animals. Infinite bluffing opportunities.
+            62 cards. 11 animals. Infinite bluffing opportunities.
           </p>
           <CardShowcase count={6} className="mb-6" />
         </div>
@@ -220,6 +224,10 @@ export default function PokerPage() {
           </h2>
           <p className="font-body text-gray-300 text-xl mb-8">
             $19.99 + shipping. Less than a tournament buy-in. Way more laughs.
+          </p>
+          <p className="font-body text-gray-400 text-sm mb-6 flex items-center justify-center gap-1.5">
+            <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
+            Proudly made in the USA
           </p>
           <BuyButton
             label="Pre-Order Stink Farm — $19.99"
