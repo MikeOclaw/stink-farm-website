@@ -9,23 +9,26 @@ export const metadata: Metadata = {
     'Order Stink Farm today for $19.99 + shipping. The bluffing card game for families, ages 6–100. 62 cards, 2–6 players, 15–30 min.'
 };
 
+// Stink cards in A–K order, then Wilds, then Action cards A–Z
 const CARD_GALLERY = [
-  { file: 'Kitten 1 (fav).png', alt: 'Kitten card — "if stink were cute"' },
+  { file: 'Alpaca 2 (fav).png', alt: 'Alpaca card — fluffy outside, stinky inside' },
   { file: 'Bull 1 (fav 1).png', alt: 'Bull card — the powerhouse of the farmyard' },
-  { file: 'Elephant 1 (fav).png', alt: 'Elephant card — big, smelly, hard to bluff about' },
   { file: 'Chicken 2 (fav).png', alt: 'Chicken card — feathers and fibs' },
+  { file: 'Duck 2 (fav).png', alt: 'Duck card — quacking up with bluffs' },
+  { file: 'Elk 2 (fav).png', alt: 'Elk card — big rack, bigger bluffs' },
+  { file: 'Fish 2 (fav 1).png', alt: 'Fish card — smells like a lie' },
   { file: 'Goat 1 (fav).png', alt: 'Goat card — chewing through your bluffs' },
   { file: 'Hog 4 (fav 2).png', alt: 'Hog card — wallowing in deception' },
-  { file: 'Alpaca 2 (fav).png', alt: 'Alpaca card — fluffy outside, stinky inside' },
-  { file: 'Fish 2 (fav 1).png', alt: 'Fish card — smells like a lie' },
   { file: 'Insect 1 (fav 1).png', alt: 'Insect card — the tiny troublemaker' },
-  { file: 'Jackalope 1 (fav).png', alt: 'Jackalope card — mythical and misleading' },
-  { file: 'Duck 2 (fav).png', alt: 'Duck card — quacking up with bluffs' },
-  { file: 'Stink Sniffer 1.png', alt: 'Stink Sniffer action card — sniff out the bluffer' },
-  { file: 'Barn Burner 1.png', alt: 'Barn Burner action card — burn it all down' },
-  { file: 'Bale Blocker 1.png', alt: 'Bale Blocker action card — block a challenge' },
+  { file: 'Jackrabbit 1 (fav).png', alt: 'Jackrabbit card — fast and sneaky' },
+  { file: 'Kitten 1 (fav).png', alt: 'Kitten card — if stink were cute' },
   { file: 'Wild 1.png', alt: 'Wild card — play as any animal' },
-  { file: 'Farmer Favor 1.png', alt: 'Farmer Favor card — a special farmyard advantage' },
+  { file: 'Bale Blocker 1.png', alt: 'Bale Blocker action card — block a challenge' },
+  { file: 'Barn Burner 1.png', alt: 'Barn Burner action card — burn it all down' },
+  { file: 'Out to Pasture 1.png', alt: 'Out to Pasture action card' },
+  { file: 'Picky Pitchfork 1.png', alt: 'Picky Pitchfork action card' },
+  { file: 'Plop Plow 1.png', alt: 'Plop Plow action card' },
+  { file: 'Stink Sniffer 1.png', alt: 'Stink Sniffer action card — sniff out the bluffer' },
 ];
 
 export default function BuyPage() {
@@ -70,7 +73,7 @@ export default function BuyPage() {
             {/* Product Details */}
             <div className="md:sticky md:top-24">
               <div className="inline-block bg-grass-green text-white font-headline text-sm px-4 py-1 rounded-full mb-4">
-                🚜 Pre-Order Now — Ships Soon!
+                Pre-Order Now — Ships Soon!
               </div>
               <h1 className="font-headline text-4xl md:text-5xl text-near-black mb-2">
                 Stink Farm
@@ -96,10 +99,10 @@ export default function BuyPage() {
               {/* Description */}
               <div className="font-body text-near-black leading-relaxed mb-8 space-y-3">
                 <p>
-                  Stink Farm is the bluffing card game where you outbluff your farmyard rivals! Play animal cards face-down, claim any animal you want, and bluff like a boss.
+                  Stink Farm is the bluffing card game where you outbluff your farmyard rivals! Play animal cards face-down and declare the current animal — or bluff like a boss.
                 </p>
                 <p>
-                  If they catch your bluff, you take the stink pile. If they&apos;re wrong, they do. First player to play all their cards without getting busted wins!
+                  If they catch your bluff, you Scoop the Pile. If they&apos;re wrong, they do. First player to play all their cards wins!
                 </p>
               </div>
 
@@ -109,9 +112,9 @@ export default function BuyPage() {
                   What&apos;s in the Box 📦
                 </h2>
                 <ul className="font-body text-sm text-gray-600 space-y-1">
-                  <li>✅ 62 beautifully illustrated cards (46 Stink + 16 Action)</li>
+                  <li>✅ 62 hilariously illustrated cards (46 Stink + 16 Action)</li>
                   <li>✅ 11 animal types in alphabetical order (Alpaca–Kitten)</li>
-                  <li>✅ Action cards (Stink Sniffer, Barn Burner, Bale Blockade…)</li>
+                  <li>✅ Action cards (Bale Blocker, Barn Burner, Stink Sniffer…)</li>
                   <li>✅ 2 Wild cards</li>
                   <li>✅ 6 Cheat sheets (animal order guide for all players)</li>
                 </ul>
@@ -136,6 +139,9 @@ export default function BuyPage() {
                   Delivery in 5–10 business days after order. Pre-orders ship as soon as stock
                   is ready. You&apos;ll get an email confirmation.
                 </p>
+                <p className="font-body text-sm text-gray-600 mt-2">
+                  🇺🇸 <strong className="text-near-black">Made in the USA</strong>
+                </p>
               </div>
             </div>
           </div>
@@ -145,11 +151,17 @@ export default function BuyPage() {
       {/* Card Gallery */}
       <section className="bg-cream-dark py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-headline text-4xl text-barn-red text-center mb-4">
-            Meet the Cards 🐄🐔🐷
+          <h2 className="font-headline text-4xl text-barn-red text-center mb-4 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12" aria-hidden="true">
+              <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="48px" />
+            </span>
+            Meet the Farmyard
+            <span className="relative inline-block w-12 h-12" aria-hidden="true">
+              <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" sizes="48px" />
+            </span>
           </h2>
           <p className="font-body text-gray-600 text-center mb-10">
-            65 cards featuring 11 animals + action cards. Every card is a potential lie.
+            62 cards featuring 11 animals + action cards. Every card is a potential lie.
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
             {CARD_GALLERY.map((card) => (
@@ -168,7 +180,7 @@ export default function BuyPage() {
             ))}
           </div>
           <p className="font-body text-center text-gray-500 text-sm mt-6">
-            Showing 16 of 65 cards — your deck is packed!
+            Showing 18 of 62 cards — your deck is packed!
           </p>
         </div>
       </section>
@@ -176,8 +188,14 @@ export default function BuyPage() {
       {/* FAQ */}
       <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="font-headline text-4xl text-barn-red text-center mb-10">
+          <h2 className="font-headline text-4xl text-barn-red text-center mb-10 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12" aria-hidden="true">
+              <Image src="/images/animals/Picky Pitchfork.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="48px" />
+            </span>
             Frequently Asked Questions
+            <span className="relative inline-block w-12 h-12" aria-hidden="true">
+              <Image src="/images/animals/Picky Pitchfork.png" alt="" fill className="object-contain" sizes="48px" />
+            </span>
           </h2>
           <div className="space-y-6">
             {[
@@ -191,11 +209,11 @@ export default function BuyPage() {
               },
               {
                 q: 'Is this appropriate for young kids?',
-                a: 'Yes! Stink Farm is designed for ages 7 and up. Kids often out-bluff the adults. It\'s simple enough to learn in 5 minutes.',
+                a: 'Yes! Stink Farm is designed for ages 6 and up. Kids often out-bluff the adults. It\'s simple enough to learn in 5 minutes.',
               },
               {
                 q: 'How many players can play?',
-                a: '2–8 players. It gets more chaotic (and more fun) with more people.',
+                a: '2–6 players. Strategy shifts with the headcount — a 2-player game is an intense psychological duel, while a 6-player game is pure farmyard chaos. Every count is a different experience.',
               },
               {
                 q: 'Can I return it?',
