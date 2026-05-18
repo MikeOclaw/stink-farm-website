@@ -38,7 +38,7 @@ export default function BuyPage() {
   return (
     <>
       {/* Product Hero */}
-      <section className="bg-gradient-to-b from-cream to-white py-16 md:py-24">
+      <section className="bg-gradient-to-b from-cream to-white py-16 md:py-24 pb-24 md:pb-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* Product Image Gallery */}
@@ -124,6 +124,19 @@ export default function BuyPage() {
           </div>
         </div>
       </section>
+
+      {/* Sticky mobile buy bar — hidden on md+ since button is already visible */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-cream-dark px-4 py-3 flex items-center gap-3 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
+        <div className="flex flex-col leading-tight">
+          <span className="font-headline text-barn-red text-xl">$19.99</span>
+          <span className="font-body text-gray-400 text-xs">+ shipping</span>
+        </div>
+        <BuyButton
+          label="Pre-Order Now"
+          source="buy-page-sticky"
+          className="bg-barn-red text-white hover:bg-barn-red-dark flex-1 justify-center text-lg"
+        />
+      </div>
 
       {/* Card Gallery */}
       <section className="bg-cream-dark py-16">
