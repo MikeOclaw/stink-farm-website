@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { BuyButton } from '@/components/BuyButton';
 import { StatBadge } from '@/components/StatBadge';
+import { ProductGallery } from '@/components/ProductGallery';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -40,37 +41,8 @@ export default function BuyPage() {
       <section className="bg-gradient-to-b from-cream to-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            {/* Product Image */}
-            <div className="flex flex-col gap-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-cream-dark">
-                <Image
-                  src="/images/box/Stink Farm - 2.0 Box Top.png"
-                  alt="Stink Farm card game box — complete game with 65 cards"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
-                  priority
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative rounded-xl overflow-hidden shadow-md border-2 border-cream-dark aspect-video">
-                  <Image
-                    src="/images/photos/4 players cards face up - top view b.png"
-                    alt="Top view of four players with Stink Farm cards spread out"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="relative rounded-xl overflow-hidden shadow-md border-2 border-cream-dark aspect-video">
-                  <Image
-                    src="/images/photos/hand holding cards b.png"
-                    alt="Player holding a hand of Stink Farm cards"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
+            {/* Product Image Gallery */}
+            <ProductGallery />
 
             {/* Product Details */}
             <div className="md:sticky md:top-24">
