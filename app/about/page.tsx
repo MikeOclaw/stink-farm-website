@@ -15,9 +15,14 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-cream to-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="text-6xl mb-6" aria-hidden="true">🌾</div>
-          <h1 className="font-headline text-5xl md:text-6xl text-barn-red mb-4">
+          <h1 className="font-headline text-5xl md:text-6xl text-barn-red mb-4 flex items-center justify-center gap-4">
+            <span className="relative inline-block w-14 h-14" aria-hidden="true">
+              <Image src="/images/animals/Windmill.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
+            </span>
             How Stink Farm Was Born
+            <span className="relative inline-block w-14 h-14" aria-hidden="true">
+              <Image src="/images/animals/Windmill.png" alt="" fill className="object-contain" sizes="56px" />
+            </span>
           </h1>
           <p className="font-body text-xl text-gray-600">
             A dad. Four boys. A kitchen table. And a whole lot of farmyard chaos.
@@ -30,21 +35,26 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4">
           <article className="font-body text-near-black space-y-6 text-lg leading-relaxed">
             <p>
-              Raising four boys is a full-contact sport. Between the muddy boots, the
-              competitions over everything, and the kind of &ldquo;farmyard humor&rdquo; that
-              can clear a room — there was never a dull moment.
+              Mike&apos;s grandfather grew up on a farm and never lost his love for the country
+              smell. On road trips, he&apos;d roll down every window the moment the fields opened
+              up — convinced the whole family needed to breathe it in. Mike&apos;s grandmother
+              took it one step further: she&apos;d scoop a cow pie right out of the field and
+              box it up to bring a little country home with her. That&apos;s the kind of family
+              this game comes from.
             </p>
 
             <p>
-              For years, the family played card games at the kitchen table. Bluffing games were
-              always the favorites — the ones where you could look someone dead in the eye, dare them to call your bluff, and watch them decide whether to trust you. The chaos. The
-              laughter. The moment someone gets caught.
+              Growing up, Mike loved a bluffing card game called BS. The core mechanic was
+              brilliant — play cards face-down, declare what you played, and dare someone to
+              call you out. But it always felt like it was missing something. More strategy.
+              More chaos. More laughs. And definitely a theme the whole family could get into.
             </p>
 
             <p>
-              One night, after one too many rounds of a game that felt like it could be
-              funnier, sillier, and more farmyard-appropriate, the idea hit:{' '}
-              <strong>what if the game was about animals? Smelly animals?</strong> What if the animals talked smack to each other?
+              The idea was simple:{' '}
+              <strong>take the bluffing mechanic everyone loves, give it a farmyard
+              makeover, and build something with real strategy and real silliness baked in.</strong>{' '}
+              Animals. Action cards. And enough stink to keep everyone honest.
             </p>
 
             <div className="my-8 relative rounded-2xl overflow-hidden shadow-xl border-4 border-cream-dark">
@@ -59,9 +69,10 @@ export default function AboutPage() {
 
             <p>
               The first version of Stink Farm was hand-drawn cards at the kitchen table. Rough,
-              fast, and immediately hilarious. The boys played it that same night. Arguments
-              broke out. Accusations flew. Someone called someone else a cheating bull. It was
-              perfect.
+              fast, and immediately hilarious. The family played it that same night. They loved
+              shouting &ldquo;Cow Pie!&rdquo; to bust each other&apos;s bluffs. Ideas for funny
+              animals and awesome action cards were flowing fast. It was clear this thing had
+              something.
             </p>
 
             <p>
