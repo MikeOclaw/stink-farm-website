@@ -87,7 +87,10 @@ export default function HomePage() {
             {/* Right: Box art */}
             <div className="flex justify-center">
               <div className="relative">
-                <p className="text-center font-body text-xs text-gray-400 mb-2">Made in the USA</p>
+                <p className="text-center font-body text-xs text-gray-400 mb-2 flex items-center justify-center gap-1.5">
+                  <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
+                  Made in the USA
+                </p>
                 <div className="relative w-64 md:w-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image
                     src="/images/box/Stink Farm - 2.0 Box Top.png"
