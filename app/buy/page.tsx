@@ -142,7 +142,10 @@ export default function BuyPage() {
                   is ready. You&apos;ll get an email confirmation.
                 </p>
                 <p className="font-body text-sm text-gray-600 mt-2">
-                  ✨ <strong className="text-near-black">Made in the USA</strong>
+                  <span className="inline-flex items-center gap-1.5">
+                    <Image src="/images/us-flag.svg" alt="US flag" width={20} height={14} className="inline-block rounded-sm" />
+                    <strong className="text-near-black">Made in the USA</strong>
+                  </span>
                 </p>
               </div>
             </div>
@@ -186,7 +189,7 @@ export default function BuyPage() {
             ))}
           </div>
           <p className="font-body text-center text-gray-500 text-sm mt-6">
-            62 cards of pure farmyard stink — manure not included 😉
+            Your deck is packed with pure farmyard stink — manure not included 😉
           </p>
         </div>
       </section>
