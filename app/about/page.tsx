@@ -35,16 +35,16 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4">
           <article className="font-body text-near-black space-y-6 text-lg leading-relaxed">
             <p>
-              Mike&apos;s grandfather grew up on a farm and never lost his love for the country
-              smell. On road trips, he&apos;d roll down every window the moment the fields opened
-              up — convinced the whole family needed to breathe it in. Mike&apos;s grandmother
-              took it one step further: she&apos;d scoop a cow pie right out of the field and
-              box it up to bring a little country home with her. That&apos;s the kind of family
-              this game comes from.
+              The game&apos;s creator grew up with a grandfather who never lost his love for
+              the country smell. On road trips, he&apos;d roll down every window the moment the
+              fields opened up — convinced the whole family needed to breathe it in. His
+              grandmother took it one step further: she&apos;d scoop a cow pie right out of the
+              field and box it up to bring a little country home with them. That&apos;s the kind
+              of family this game comes from.
             </p>
 
             <p>
-              Growing up, Mike loved a bluffing card game called BS. The core mechanic was
+              Growing up, he loved a bluffing card game called BS. The core mechanic was
               brilliant — play cards face-down, declare what you played, and dare someone to
               call you out. But it always felt like it was missing something. More strategy.
               More chaos. More laughs. And definitely a theme the whole family could get into.
@@ -54,7 +54,7 @@ export default function AboutPage() {
               The idea was simple:{' '}
               <strong>take the bluffing mechanic everyone loves, give it a farmyard
               makeover, and build something with real strategy and real silliness baked in.</strong>{' '}
-              Animals. Action cards. And enough stink to keep everyone honest.
+              Animals. Action cards. And enough stink for everyone to scoop.
             </p>
 
             <div className="my-8 relative rounded-2xl overflow-hidden shadow-xl border-4 border-cream-dark">
@@ -69,10 +69,9 @@ export default function AboutPage() {
 
             <p>
               The first version of Stink Farm was hand-drawn cards at the kitchen table. Rough,
-              fast, and immediately hilarious. The family played it that same night. They loved
-              shouting &ldquo;Cow Pie!&rdquo; to bust each other&apos;s bluffs. Ideas for funny
-              animals and awesome action cards were flowing fast. It was clear this thing had
-              something.
+              fast, and immediately hilarious. They loved shouting &ldquo;Cow Pie!&rdquo; to
+              bust each other&apos;s bluffs, and ideas for funny animals and awesome action cards
+              were flowing fast. It was clear this thing had something.
             </p>
 
             <p>
@@ -83,7 +82,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              The 65-card deck you&apos;re holding today is the version that survived every
+              The 62-card deck you&apos;re holding today is the version that survived every
               kitchen table test. It&apos;s the version that made a teenager put down his phone.
               That made grandparents snort-laugh. That turned a normal Tuesday night into a
               memory.
@@ -92,14 +91,14 @@ export default function AboutPage() {
             <div className="bg-cream rounded-2xl p-6 border-2 border-cream-dark my-8">
               <blockquote className="font-body text-xl italic text-near-black text-center">
                 &ldquo;The goal was simple: make something the whole family would actually want
-                to play. Something funny. Something fair. Something that made bluffing feel like
-                an art form.&rdquo;
+                to play. Something funny. Something strategic. Something packed with opportunities
+                to bluff, get busted, and do it all over again.&rdquo;
               </blockquote>
             </div>
 
             <p>
               Stink Farm is named for the obvious reason. On the farm, things smell. In the
-              game, your lies smell worse. The person holding the most stink at the end?
+              game, your bluffs smell worse. The person holding the most stink at the end?
               They&apos;ve got some explaining to do.
             </p>
 
@@ -151,29 +150,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Box art */}
-      <section className="bg-white py-16">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <h2 className="font-headline text-4xl text-barn-red mb-6">
-            Built with Love (and Livestock) 🐄
-          </h2>
-          <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-cream-dark mb-8">
-            <Image
-              src="/images/box/Stink Farm - 2.0 Box Bottom.png"
-              alt="Back of the Stink Farm box showing game details and credits"
-              width={600}
-              height={600}
-              className="w-full h-auto"
-            />
-          </div>
-          <p className="font-body text-gray-600 leading-relaxed">
-            Every detail of Stink Farm — from the card art to the rules to the box design —
-            was crafted with the same goal: make something your family will actually want to
-            play again and again.
-          </p>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-barn-red py-16">
         <div className="max-w-2xl mx-auto px-4 text-center">
@@ -181,8 +157,9 @@ export default function AboutPage() {
             Become Part of the Farmyard Story
           </h2>
           <p className="font-body text-red-100 text-lg mb-8">
-            Every copy sold is a new kitchen table, a new set of bluffs, and a new family
-            memory. We&apos;d love for yours to be next.
+            Every detail of Stink Farm — from the card art to the rules to the box design —
+            was built with one goal: make something your family actually wants to play again
+            and again. We&apos;d love for your kitchen table to be next.
           </p>
           <BuyButton
             label="Pre-Order Stink Farm — $19.99"
