@@ -9,14 +9,14 @@ export const metadata: Metadata = {
     'Order Stink Farm today for $19.99 + shipping. The bluffing card game for families, ages 6–100. 62 cards, 2–6 players, 15–30 min.'
 };
 
-// Stink cards in A–K order, then Wilds, then Action cards A–Z
+// 11 animals (A–K) + Wild + all 8 action cards (A–Z) = 20 cards
 const CARD_GALLERY = [
   { file: 'Alpaca 2 (fav).png', alt: 'Alpaca card — fluffy outside, stinky inside' },
   { file: 'Bull 1 (fav 1).png', alt: 'Bull card — the powerhouse of the farmyard' },
   { file: 'Chicken 2 (fav).png', alt: 'Chicken card — feathers and fibs' },
   { file: 'Duck 2 (fav).png', alt: 'Duck card — quacking up with bluffs' },
   { file: 'Elk 2 (fav).png', alt: 'Elk card — big rack, bigger bluffs' },
-  { file: 'Fish 2 (fav 1).png', alt: 'Fish card — smells like a lie' },
+  { file: 'Fish 2 (fav 1).png', alt: 'Fish card — smells like a bluff' },
   { file: 'Goat 1 (fav).png', alt: 'Goat card — chewing through your bluffs' },
   { file: 'Hog 4 (fav 2).png', alt: 'Hog card — wallowing in deception' },
   { file: 'Insect 1 (fav 1).png', alt: 'Insect card — the tiny troublemaker' },
@@ -25,6 +25,8 @@ const CARD_GALLERY = [
   { file: 'Wild 1.png', alt: 'Wild card — play as any animal' },
   { file: 'Bale Blocker 1.png', alt: 'Bale Blocker action card — block a challenge' },
   { file: 'Barn Burner 1.png', alt: 'Barn Burner action card — burn it all down' },
+  { file: 'Farmer Favor 1.png', alt: 'Farmer Favor action card' },
+  { file: 'Fortified Fence 1.png', alt: 'Fortified Fence action card' },
   { file: 'Out to Pasture 1.png', alt: 'Out to Pasture action card' },
   { file: 'Picky Pitchfork 1.png', alt: 'Picky Pitchfork action card' },
   { file: 'Plop Plow 1.png', alt: 'Plop Plow action card' },
@@ -161,11 +163,15 @@ export default function BuyPage() {
             </span>
           </h2>
           <p className="font-body text-gray-600 text-center mb-10">
-            62 cards featuring 11 animals + action cards. Every card is a potential lie.
+            62 cards featuring 11 animals + action cards. Every turn is a potential bluff.
           </p>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
             {CARD_GALLERY.map((card) => (
-              <div key={card.file} className="card-hover">
+              <div
+                key={card.file}
+                className="card-hover"
+                style={{ width: 'calc((100% - 1.5rem) / 3)', maxWidth: '160px', minWidth: '80px' }}
+              >
                 <div className="relative rounded-xl overflow-hidden shadow-md border-2 border-white">
                   <Image
                     src={`/images/cards/${card.file}`}
@@ -180,7 +186,7 @@ export default function BuyPage() {
             ))}
           </div>
           <p className="font-body text-center text-gray-500 text-sm mt-6">
-            Showing 18 of 62 cards — your deck is packed!
+            Showing 20 of 62 cards — your deck is packed!
           </p>
         </div>
       </section>
@@ -213,7 +219,8 @@ export default function BuyPage() {
               },
               {
                 q: 'How many players can play?',
-                a: '2–6 players. Strategy shifts with the headcount — a 2-player game is an intense psychological duel, while a 6-player game is pure farmyard chaos. Every count is a different experience.',
+                a: '2–6 players. Strategy shifts with the headcount — a 2-player game is two hogs scrapping for the same slop bucket, while a 6-player game is pure barnyard pandemonium. Every count is a different experience.',
+
               },
               {
                 q: 'Can I return it?',
