@@ -142,7 +142,7 @@ export default function BuyPage() {
                   is ready. You&apos;ll get an email confirmation.
                 </p>
                 <p className="font-body text-sm text-gray-600 mt-2">
-                  🇺🇸 <strong className="text-near-black">Made in the USA</strong>
+                  ✨ <strong className="text-near-black">Made in the USA</strong>
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function BuyPage() {
             ))}
           </div>
           <p className="font-body text-center text-gray-500 text-sm mt-6">
-            Showing 20 of 62 cards — your deck is packed!
+            62 cards of pure farmyard stink — manure not included 😉
           </p>
         </div>
       </section>
@@ -219,7 +219,8 @@ export default function BuyPage() {
               },
               {
                 q: 'How many players can play?',
-                a: '2–6 players. Strategy shifts with the headcount — a 2-player game is two hogs scrapping for the same slop bucket, while a 6-player game is pure barnyard pandemonium. Every count is a different experience.',
+                a: '2–6 players. Strategy shifts with the headcount — a 2-player game is two hogs scrapping for the same slop bucket, while a 6-player game is pure farmyard pandemonium. Every count is a different experience.',
+
 
               },
               {
