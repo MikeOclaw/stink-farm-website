@@ -377,7 +377,7 @@ export default function HomePage() {
             Grab your copy today and find out who in your family is the biggest bluffer.
           </p>
           <BuyButton
-            label="Pre-Order Now — $19.99 + Shipping"
+            label="Pre-Order Now — $19.99"
             source="homepage-footer-cta"
             className="bg-barn-red text-white hover:bg-barn-red-dark text-2xl"
           />

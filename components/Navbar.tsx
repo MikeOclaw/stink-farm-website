@@ -53,10 +53,10 @@ export function Navbar() {
           </Link>
           <Link
             href="/buy"
-            className="font-body font-semibold text-barn-red hover:text-barn-red-dark transition-colors flex items-center gap-2"
+            className="font-body font-semibold text-barn-red border-2 border-barn-red px-5 py-2 rounded-full hover:bg-barn-red hover:text-white transition-colors flex items-center gap-2"
           >
             <span>Order Stink Farm</span>
-            <span className="font-body text-sm text-gray-500">$19.99</span>
+            <span className="font-body text-sm opacity-75">$19.99</span>
           </Link>
         </div>
 

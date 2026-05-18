@@ -1,12 +1,18 @@
 import Image from 'next/image';
 
+// A–K alphabetical order
 const FEATURED_CARDS = [
-  { file: 'Kitten 1 (fav).png', alt: 'Kitten card — a smelly kitten ready to bluff' },
+  { file: 'Alpaca 2 (fav).png', alt: 'Alpaca card — fluffy outside, stinky inside' },
   { file: 'Bull 1 (fav 1).png', alt: 'Bull card — strong and stinky' },
-  { file: 'Elk 2 (fav).png', alt: 'Elk card — the tall bluffer of the farmyard' },
   { file: 'Chicken 2 (fav).png', alt: 'Chicken card — too chicken to bluff?' },
+  { file: 'Duck 2 (fav).png', alt: 'Duck card — quacking up with bluffs' },
+  { file: 'Elk 2 (fav).png', alt: 'Elk card — the tall bluffer of the farmyard' },
+  { file: 'Fish 2 (fav 1).png', alt: 'Fish card — smells like a bluff' },
   { file: 'Goat 1 (fav).png', alt: 'Goat card — the champion chewer and bluffer' },
   { file: 'Hog 4 (fav 2).png', alt: 'Hog card — wallowing in bluffs' },
+  { file: 'Insect 1 (fav 1).png', alt: 'Insect card — the tiny troublemaker' },
+  { file: 'Jackrabbit 1 (fav).png', alt: 'Jackrabbit card — fast and sneaky' },
+  { file: 'Kitten 1 (fav).png', alt: 'Kitten card — a smelly kitten ready to bluff' },
 ];
 
 interface CardShowcaseProps {
