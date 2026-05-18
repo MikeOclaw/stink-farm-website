@@ -71,7 +71,7 @@ export default function AboutPage() {
               The first version of Stink Farm was hand-drawn cards at the kitchen table. Rough,
               fast, and immediately hilarious. They loved shouting &ldquo;Cow Pie!&rdquo; to
               bust each other&apos;s bluffs, and ideas for funny animals and awesome action cards
-              were flowing fast. Nobody wanted to stop playing.
+              were flowing fast. It was rough around the edges, but the fun was undeniable.
             </p>
 
             <p>
