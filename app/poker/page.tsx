@@ -82,10 +82,12 @@ export default function PokerPage() {
 
             {/* Poker-themed photo */}
             <div className="relative">
-              <p className="text-center font-body text-xs text-green-400 mb-2 flex items-center justify-center gap-1.5">
-                <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
-                Made in the USA
-              </p>
+              <div className="flex justify-end mb-2 px-1">
+                <p className="font-body text-xs text-green-400 flex items-center gap-1.5">
+                  <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
+                  Made in the USA
+                </p>
+              </div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-green-700">
                 <Image
                   src="/images/photos/Poker theme - 4 players cards face up - top view.png"
@@ -96,8 +98,8 @@ export default function PokerPage() {
                   priority
                 />
               </div>
-              {/* Green felt badge */}
-              <div className="absolute -top-3 -right-3 bg-green-500 text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-green-300 rotate-3">
+              {/* Green felt badge — left side, tilting up */}
+              <div className="absolute -top-3 -left-3 bg-green-500 text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-green-300 -rotate-3">
                 Game Night Ready! 🏆
               </div>
             </div>
@@ -140,7 +142,7 @@ export default function PokerPage() {
               {
                 icon: '👀',
                 title: 'Position Matters',
-                desc: 'Playing last has advantages. Sound familiar? Good. Your experience will show — right up until your kid outplays you anyway.',
+                desc: 'Better to sit left or right of the big bluffer than across from them. You already know this. Now teach your kids.',
               },
               {
                 icon: '🏆',
@@ -208,7 +210,10 @@ export default function PokerPage() {
                   seriously? Absolutely can play.
                 </p>
                 <p>
-                  Games run 20–40 minutes. You can fit in three rounds before dessert.
+                  Games run 15–30 minutes. You can fit in three rounds before dessert.
+                </p>
+                <p>
+                  Bonus: every hand your kid plays is a lesson in reading faces, controlling reactions, and thinking one step ahead. Basically poker school — with goats.
                 </p>
               </div>
             </div>
