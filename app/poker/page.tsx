@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { BuyButton } from '@/components/BuyButton';
 import { StatBadge } from '@/components/StatBadge';
 import { CardShowcase } from '@/components/CardShowcase';
@@ -7,7 +8,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Stink Farm for Poker Players — Bluff the Whole Family',
   description:
-    'You bluff at poker. Now bluff the whole family. Stink Farm is the bluffing card game poker players love. Perfect for game nights, ages 7+.',
+    'You bluff at poker. Now bluff the whole family. Stink Farm is the bluffing card game poker players love. Perfect for game nights, ages 6+.',
 };
 
 export default function PokerPage() {
@@ -31,18 +32,24 @@ export default function PokerPage() {
           aria-hidden="true"
         />
 
-        {/* Poker chips decoration */}
+        {/* Aces decoration — replacing slot machine */}
         <div
           className="absolute top-10 right-10 text-6xl opacity-20 rotate-12"
           aria-hidden="true"
         >
-          🎰
+          🂡
+        </div>
+        <div
+          className="absolute top-16 right-20 text-5xl opacity-15 -rotate-6"
+          aria-hidden="true"
+        >
+          ♠️
         </div>
         <div
           className="absolute bottom-10 left-10 text-5xl opacity-20 -rotate-12"
           aria-hidden="true"
         >
-          ♠️
+          ♣️
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
@@ -70,14 +77,16 @@ export default function PokerPage() {
                 <StatBadge icon="⏱️" label="Minutes" value="15–30" />
               </div>
 
-              <BuyButton
-                label="Pre-Order Now — $19.99"
-                source="poker-page"
-                className="bg-green-500 text-white hover:bg-green-400 text-2xl"
-              />
-              <p className="font-body text-gray-400 text-sm mt-3">
-                + shipping · Secure Stripe checkout
-              </p>
+              <div className="flex flex-col items-start gap-2">
+                <BuyButton
+                  label="Pre-Order Now — $19.99"
+                  source="poker-page"
+                  className="bg-green-500 text-white hover:bg-green-400 text-2xl"
+                />
+                <p className="font-body text-gray-400 text-sm w-full text-center">
+                  + shipping · Secure Stripe checkout
+                </p>
+              </div>
             </div>
 
             {/* Poker-themed photo */}
@@ -113,21 +122,27 @@ export default function PokerPage() {
         style={{ background: 'linear-gradient(180deg, #0d2b1e 0%, #1a4731 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12">
-            Why Poker Players Love Stink Farm 🃏
+          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
+            </span>
+            Why Poker Players Love Stink Farm
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="56px" />
+            </span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 icon: '🎭',
-                title: 'It\'s All About Reads',
-                desc: 'Can you spot a bluff by watching someone\'s face? Your poker instincts work here. Watch the 8-year-old across the table — they have zero poker face.',
+                title: "It's All About Reads",
+                desc: "Can you read a 10-year-old across the table? Better yet — can they read you? Your poker instincts are about to get tested by someone with zero filter and zero fear.",
               },
               {
                 icon: '🧠',
-                title: 'Range Thinking',
-                desc: 'In poker, you think about ranges. In Stink Farm, you think about what cards have already been played. Sound familiar? It should.',
+                title: 'Are They Holding What They Say?',
+                desc: "In poker you think about the odds they actually have the cards they're representing. In Stink Farm, same question — just with goats instead of aces.",
               },
               {
                 icon: '😂',
@@ -137,17 +152,17 @@ export default function PokerPage() {
               {
                 icon: '🔥',
                 title: 'Action Cards Change Everything',
-                desc: 'Stink Sniffer. Barn Burner. Bale Blocker. Action cards shift momentum like a well-timed 3-bet. Stay sharp.',
+                desc: 'Stink Sniffer. Barn Burner. Bale Blocker. Action cards shift momentum like a well-timed re-raise. Stay sharp.',
               },
               {
                 icon: '👀',
                 title: 'Position Matters',
-                desc: 'Better to sit left or right of the big bluffer than across from them. You already know this. Now teach your kids.',
+                desc: "Is it better to sit to the left or right of the big bluffer? You better figure it out quickly.",
               },
               {
-                icon: '🏆',
-                title: 'Bragging Rights',
-                desc: 'Win Stink Farm against your family and you\'re the undisputed farmyard champion. Lose and you never hear the end of it.',
+                icon: '🃏',
+                title: 'Future Poker Players',
+                desc: "Every round builds real skills — reading faces, masking tells, knowing when to call. Start them young. The farmyard table is the best poker prep there is.",
               },
             ].map((item) => (
               <div
@@ -171,22 +186,45 @@ export default function PokerPage() {
         style={{ background: '#0a1f16' }}
       >
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-headline text-4xl text-white text-center mb-4">
-            The Cards 🐄
+          <h2 className="font-headline text-4xl text-white text-center mb-4 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
+            </span>
+            Meet the Farmyard
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="56px" />
+            </span>
           </h2>
           <p className="font-body text-gray-400 text-center mb-10">
             62 cards. 11 animals. Infinite bluffing opportunities.
           </p>
-          <CardShowcase count={6} className="mb-6" />
+          <CardShowcase count={6} className="mb-10" />
+          <div className="text-center">
+            <Link
+              href="/buy"
+              className="font-headline text-xl text-green-400 border-2 border-green-500 px-8 py-3 rounded-full hover:bg-green-500 hover:text-white transition-colors inline-block"
+            >
+              See the Full Card Lineup →
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Poker photo */}
+      {/* Poker photo + Game Night */}
       <section
         className="py-16"
         style={{ background: 'linear-gradient(180deg, #0a1f16 0%, #1a4731 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-headline text-4xl text-white text-center mb-10 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
+            </span>
+            Perfect for Game Night
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="56px" />
+            </span>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-green-700">
               <Image
@@ -198,7 +236,6 @@ export default function PokerPage() {
               />
             </div>
             <div className="text-white">
-              <h2 className="font-headline text-4xl mb-6">Perfect for Game Night 🌙</h2>
               <div className="space-y-4 font-body text-gray-300">
                 <p>
                   Poker night winding down? Deal out Stink Farm. It&apos;s the perfect
@@ -221,6 +258,54 @@ export default function PokerPage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section
+        className="py-16 md:py-24"
+        style={{ background: 'linear-gradient(180deg, #1a4731 0%, #0d2b1e 100%)' }}
+      >
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12">
+            What Poker Players Are Saying 🃏
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote:
+                  "If you love Liar's Dice or Bluff — this is the family version you've been waiting for. So much fun.",
+                name: 'Marcus D.',
+                detail: 'Poker player & dad',
+              },
+              {
+                quote:
+                  "I brought this to my poker buddy's kid's birthday party. Huge hit. Every parent at the party wanted to know where to get one.",
+                name: 'Dave K.',
+                detail: 'Weekly poker night regular',
+              },
+              {
+                quote:
+                  "My 9-year-old called my bluff three times in one game. I play poker twice a week. I'm not okay.",
+                name: 'Rob T.',
+                detail: 'Home game player, Ohio',
+              },
+            ].map((testimonial, i) => (
+              <blockquote
+                key={i}
+                className="bg-green-900 bg-opacity-60 rounded-2xl p-6 border border-green-700"
+              >
+                <p className="font-body text-gray-200 italic mb-4 leading-relaxed">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+                <footer className="font-body text-sm text-gray-400">
+                  <span className="font-semibold text-white">{testimonial.name}</span>
+                  <br />
+                  {testimonial.detail}
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="bg-green-900 py-16 md:py-24">
         <div className="max-w-2xl mx-auto px-4 text-center">
@@ -229,10 +314,6 @@ export default function PokerPage() {
           </h2>
           <p className="font-body text-gray-300 text-xl mb-8">
             $19.99 + shipping. Less than a tournament buy-in. Way more laughs.
-          </p>
-          <p className="font-body text-gray-400 text-sm mb-6 flex items-center justify-center gap-1.5">
-            <Image src="/images/us-flag.svg" alt="US flag" width={16} height={11} className="inline-block rounded-sm" />
-            Proudly made in the USA
           </p>
           <BuyButton
             label="Pre-Order Stink Farm — $19.99"
