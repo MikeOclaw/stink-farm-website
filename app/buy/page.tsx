@@ -139,7 +139,7 @@ export default function BuyPage() {
       </div>
 
       {/* Card Gallery */}
-      <section className="bg-cream-dark py-16">
+      <section id="card-lineup" className="bg-cream-dark py-16">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-headline text-4xl text-barn-red text-center mb-4 flex items-center justify-center gap-3">
             <span className="relative inline-block w-12 h-12" aria-hidden="true">

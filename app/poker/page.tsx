@@ -32,31 +32,41 @@ export default function PokerPage() {
           aria-hidden="true"
         />
 
-        {/* Aces decoration — replacing slot machine */}
+        {/* Suit symbols — visible on all screens */}
         <div
-          className="absolute top-10 right-10 text-6xl opacity-20 rotate-12"
+          className="absolute top-8 right-8 font-headline text-white opacity-40 rotate-12 select-none"
+          style={{ fontSize: '5rem', lineHeight: 1 }}
           aria-hidden="true"
         >
-          🂡
+          ♠
         </div>
         <div
-          className="absolute top-16 right-20 text-5xl opacity-15 -rotate-6"
+          className="absolute top-24 right-24 font-headline text-green-400 opacity-30 -rotate-6 select-none"
+          style={{ fontSize: '3.5rem', lineHeight: 1 }}
           aria-hidden="true"
         >
-          ♠️
+          ♣
         </div>
         <div
-          className="absolute bottom-10 left-10 text-5xl opacity-20 -rotate-12"
+          className="absolute bottom-10 left-8 font-headline text-white opacity-30 -rotate-12 select-none"
+          style={{ fontSize: '4rem', lineHeight: 1 }}
           aria-hidden="true"
         >
-          ♣️
+          ♥
+        </div>
+        <div
+          className="absolute bottom-20 left-20 font-headline text-green-400 opacity-25 rotate-6 select-none"
+          style={{ fontSize: '2.5rem', lineHeight: 1 }}
+          aria-hidden="true"
+        >
+          ♦
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block border border-green-500 text-green-400 font-headline text-sm px-4 py-1.5 rounded-full mb-6">
-                🃏 For Poker Players
+                For Poker Families
               </div>
               <h1 className="font-headline text-5xl md:text-7xl text-white mb-4 leading-tight">
                 You Bluff at Poker.
@@ -77,13 +87,13 @@ export default function PokerPage() {
                 <StatBadge icon="⏱️" label="Minutes" value="15–30" />
               </div>
 
-              <div className="flex flex-col items-start gap-2">
+              <div className="flex flex-col items-center gap-2 w-full sm:items-start">
                 <BuyButton
                   label="Pre-Order Now — $19.99"
                   source="poker-page"
                   className="bg-green-500 text-white hover:bg-green-400 text-2xl"
                 />
-                <p className="font-body text-gray-400 text-sm w-full text-center">
+                <p className="font-body text-gray-400 text-sm text-center w-full">
                   + shipping · Secure Stripe checkout
                 </p>
               </div>
@@ -119,7 +129,7 @@ export default function PokerPage() {
       {/* The poker connection */}
       <section
         className="py-16 md:py-24"
-        style={{ background: 'linear-gradient(180deg, #0d2b1e 0%, #1a4731 100%)' }}
+        style={{ background: '#0d2b1e' }}
       >
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12 flex items-center justify-center gap-3">
@@ -140,9 +150,9 @@ export default function PokerPage() {
                 desc: "Can you read a 10-year-old across the table? Better yet — can they read you? Your poker instincts are about to get tested by someone with zero filter and zero fear.",
               },
               {
-                icon: '🧠',
+                icon: '🤔',
                 title: 'Are They Holding What They Say?',
-                desc: "In poker you think about the odds they actually have the cards they're representing. In Stink Farm, same question — just with goats instead of aces.",
+                desc: "In poker you think about the odds they actually have the cards they're representing. In Stink Farm, same question — just with hogs instead of aces.",
               },
               {
                 icon: '😂',
@@ -160,7 +170,7 @@ export default function PokerPage() {
                 desc: "Is it better to sit to the left or right of the big bluffer? You better figure it out quickly.",
               },
               {
-                icon: '🃏',
+                icon: '😎',
                 title: 'Future Poker Players',
                 desc: "Every round builds real skills — reading faces, masking tells, knowing when to call. Start them young. The farmyard table is the best poker prep there is.",
               },
@@ -169,10 +179,10 @@ export default function PokerPage() {
                 key={item.title}
                 className="bg-green-900 bg-opacity-50 rounded-2xl p-6 border border-green-700"
               >
-                <div className="text-4xl mb-3" aria-hidden="true">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl flex-shrink-0" aria-hidden="true">{item.icon}</span>
+                  <h3 className="font-headline text-xl text-white">{item.title}</h3>
                 </div>
-                <h3 className="font-headline text-xl text-white mb-2">{item.title}</h3>
                 <p className="font-body text-gray-300 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -180,13 +190,14 @@ export default function PokerPage() {
         </div>
       </section>
 
-      {/* Card Showcase on dark bg */}
+      {/* Card Showcase */}
       <section
+        id="card-lineup"
         className="py-16"
-        style={{ background: '#0a1f16' }}
+        style={{ background: '#1a4731' }}
       >
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-headline text-4xl text-white text-center mb-4 flex items-center justify-center gap-3">
+          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-4 flex items-center justify-center gap-3">
             <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
               <Image src="/images/animals/Fortified Fence.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
             </span>
@@ -201,7 +212,7 @@ export default function PokerPage() {
           <CardShowcase count={6} className="mb-10" />
           <div className="text-center">
             <Link
-              href="/buy"
+              href="/buy#card-lineup"
               className="font-headline text-xl text-green-400 border-2 border-green-500 px-8 py-3 rounded-full hover:bg-green-500 hover:text-white transition-colors inline-block"
             >
               See the Full Card Lineup →
@@ -213,10 +224,10 @@ export default function PokerPage() {
       {/* Poker photo + Game Night */}
       <section
         className="py-16"
-        style={{ background: 'linear-gradient(180deg, #0a1f16 0%, #1a4731 100%)' }}
+        style={{ background: '#0a1f16' }}
       >
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-headline text-4xl text-white text-center mb-10 flex items-center justify-center gap-3">
+          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-10 flex items-center justify-center gap-3">
             <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
               <Image src="/images/animals/Scarecrow.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
             </span>
@@ -261,11 +272,17 @@ export default function PokerPage() {
       {/* Testimonials */}
       <section
         className="py-16 md:py-24"
-        style={{ background: 'linear-gradient(180deg, #1a4731 0%, #0d2b1e 100%)' }}
+        style={{ background: '#0d2b1e' }}
       >
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12">
-            What Poker Players Are Saying 🃏
+          <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12 flex items-center justify-center gap-3">
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
+            </span>
+            What Poker Players Are Saying
+            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="56px" />
+            </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -277,7 +294,7 @@ export default function PokerPage() {
               },
               {
                 quote:
-                  "I brought this to my poker buddy's kid's birthday party. Huge hit. Every parent at the party wanted to know where to get one.",
+                  "I brought this to my poker buddy's kid's birthday party. Huge hit. Every parent there wanted to know where to get one.",
                 name: 'Dave K.',
                 detail: 'Weekly poker night regular',
               },

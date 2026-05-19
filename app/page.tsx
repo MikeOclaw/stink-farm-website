@@ -282,7 +282,7 @@ export default function HomePage() {
 
           <div className="text-center">
             <Link
-              href="/buy"
+              href="/buy#card-lineup"
               className="font-headline text-xl text-barn-red border-2 border-barn-red px-8 py-3 rounded-full hover:bg-barn-red hover:text-white transition-colors inline-block"
             >
               See the Full Card Lineup →
