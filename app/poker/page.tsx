@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { BuyButton } from '@/components/BuyButton';
 import { StatBadge } from '@/components/StatBadge';
 import { CardShowcase } from '@/components/CardShowcase';
@@ -48,15 +47,15 @@ export default function PokerPage() {
           ♣
         </div>
         <div
-          className="absolute bottom-10 left-8 font-headline text-white opacity-30 -rotate-12 select-none"
-          style={{ fontSize: '4rem', lineHeight: 1 }}
+          className="absolute bottom-10 left-8 font-headline opacity-40 -rotate-12 select-none"
+          style={{ fontSize: '4rem', lineHeight: 1, color: '#e05050' }}
           aria-hidden="true"
         >
           ♥
         </div>
         <div
-          className="absolute bottom-20 left-20 font-headline text-green-400 opacity-25 rotate-6 select-none"
-          style={{ fontSize: '2.5rem', lineHeight: 1 }}
+          className="absolute bottom-20 left-20 font-headline opacity-35 rotate-6 select-none"
+          style={{ fontSize: '2.5rem', lineHeight: 1, color: '#e05050' }}
           aria-hidden="true"
         >
           ♦
@@ -87,13 +86,13 @@ export default function PokerPage() {
                 <StatBadge icon="⏱️" label="Minutes" value="15–30" />
               </div>
 
-              <div className="flex flex-col items-center gap-2 w-full sm:items-start">
+              <div className="inline-flex flex-col items-stretch gap-2">
                 <BuyButton
                   label="Pre-Order Now — $19.99"
                   source="poker-page"
                   className="bg-green-500 text-white hover:bg-green-400 text-2xl"
                 />
-                <p className="font-body text-gray-400 text-sm text-center w-full">
+                <p className="font-body text-gray-400 text-sm text-center">
                   + shipping · Secure Stripe checkout
                 </p>
               </div>
@@ -119,7 +118,7 @@ export default function PokerPage() {
               </div>
               {/* Green felt badge — left side, tilting up */}
               <div className="absolute -top-3 -left-3 bg-green-500 text-white font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-green-300 -rotate-3">
-                Game Night Ready! 🏆
+                Game Night Ready!
               </div>
             </div>
           </div>
@@ -145,7 +144,7 @@ export default function PokerPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                icon: '🎭',
+                icon: '🧐',
                 title: "It's All About Reads",
                 desc: "Can you read a 10-year-old across the table? Better yet — can they read you? Your poker instincts are about to get tested by someone with zero filter and zero fear.",
               },
@@ -209,15 +208,7 @@ export default function PokerPage() {
           <p className="font-body text-gray-400 text-center mb-10">
             62 cards. 11 animals. Infinite bluffing opportunities.
           </p>
-          <CardShowcase count={6} className="mb-10" />
-          <div className="text-center">
-            <Link
-              href="/buy#card-lineup"
-              className="font-headline text-xl text-green-400 border-2 border-green-500 px-8 py-3 rounded-full hover:bg-green-500 hover:text-white transition-colors inline-block"
-            >
-              See the Full Card Lineup →
-            </Link>
-          </div>
+          <CardShowcase count={6} className="mb-6" />
         </div>
       </section>
 
@@ -277,11 +268,11 @@ export default function PokerPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-12 flex items-center justify-center gap-3">
             <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)', transform: 'scaleX(-1)' }} sizes="56px" />
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
             </span>
             What Poker Players Are Saying
             <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
-              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} sizes="56px" />
+              <Image src="/images/animals/Farmer Favor.png" alt="" fill className="object-contain" sizes="56px" />
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
