@@ -30,7 +30,7 @@ export default function FarmFamiliesPage() {
                 <br />
                 <span className="text-near-black">Your Farmyard</span>
                 <br />
-                Deserves! 🐄
+                Deserves!
               </h1>
               <p className="font-body text-xl text-amber-900 mb-8 leading-relaxed">
                 Stink Farm is a family card game featuring the animals you know and love —
@@ -118,8 +118,8 @@ export default function FarmFamiliesPage() {
               },
               {
                 icon: '🎪',
-                title: 'Perfect for County Fairs',
-                desc: 'Bring it to the county fair, petting zoo trips, or any time your crew is in the farmyard mood.',
+                title: 'Perfect for Country Visits',
+                desc: 'Play it anywhere your family is soaking in the country air — porch swings, barn suppers, and pickup truck tailgates all welcome Stink Farm.',
               },
               {
                 icon: '🎁',
@@ -179,7 +179,7 @@ export default function FarmFamiliesPage() {
                 src="/images/photos/hand holding cards b.png"
                 alt="Player holding Stink Farm cards, deciding on their next bluff"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -189,11 +189,11 @@ export default function FarmFamiliesPage() {
                 unpredictable, and always a little smelly. The card art, the card names,
                 the whole vibe is pure farmyard fun.
               </p>
-              <p className="font-body text-gray-600 leading-relaxed">
+              <p className="font-body text-lg text-gray-600 leading-relaxed">
                 Whether your family has a real farm, loves animals, or just appreciates a
                 good barnyard joke — this game is for you.
               </p>
-              <p className="font-body text-gray-600 leading-relaxed">
+              <p className="font-body text-lg text-gray-600 leading-relaxed">
                 Games run 15–30 minutes. Short enough to fit in before chores. Long enough for everyone to put their bluffing skills to the test.
               </p>
             </div>

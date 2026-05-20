@@ -275,9 +275,9 @@ export default function PokerPage() {
             {[
               {
                 quote:
-                  "If you love Liar's Dice or Bluff — this is the family version you've been waiting for. So much fun.",
-                name: 'Marcus D.',
-                detail: 'Poker player & dad',
+                  "My 9-year-old called my bluff three times in one game. I play poker twice a week. I'm not okay.",
+                name: 'Rob T.',
+                detail: 'Home game player, Ohio',
               },
               {
                 quote:
@@ -287,9 +287,9 @@ export default function PokerPage() {
               },
               {
                 quote:
-                  "My 9-year-old called my bluff three times in one game. I play poker twice a week. I'm not okay.",
-                name: 'Rob T.',
-                detail: 'Home game player, Ohio',
+                  "If you love Liar's Dice or Bluff — this is the family version you've been waiting for. So much fun.",
+                name: 'Marcus D.',
+                detail: 'Poker player & dad',
               },
             ].map((testimonial, i) => (
               <blockquote
