@@ -31,34 +31,30 @@ export default function PokerPage() {
           aria-hidden="true"
         />
 
-        {/* Suit symbols — visible on all screens */}
-        <div
-          className="absolute top-8 right-8 font-headline text-white opacity-40 rotate-12 select-none"
-          style={{ fontSize: '5rem', lineHeight: 1 }}
-          aria-hidden="true"
-        >
-          ♠
-        </div>
-        <div
-          className="absolute top-24 right-24 font-headline text-green-400 opacity-30 -rotate-6 select-none"
-          style={{ fontSize: '3.5rem', lineHeight: 1 }}
-          aria-hidden="true"
-        >
-          ♣
-        </div>
-        <div
-          className="absolute bottom-10 left-8 font-headline opacity-40 -rotate-12 select-none"
-          style={{ fontSize: '4rem', lineHeight: 1, color: '#e05050' }}
-          aria-hidden="true"
-        >
-          ♥
-        </div>
-        <div
-          className="absolute bottom-20 left-20 font-headline opacity-35 rotate-6 select-none"
-          style={{ fontSize: '2.5rem', lineHeight: 1, color: '#e05050' }}
-          aria-hidden="true"
-        >
-          ♦
+        {/* Suit symbols — all four clustered upper-right */}
+        <div className="absolute top-6 right-6 select-none" aria-hidden="true">
+          {/* Top row: ♠ ♥ */}
+          <div className="flex gap-4 mb-2 justify-end">
+            <span
+              className="font-headline text-white opacity-50 rotate-6 inline-block"
+              style={{ fontSize: '4.5rem', lineHeight: 1 }}
+            >♠</span>
+            <span
+              className="font-headline opacity-50 -rotate-6 inline-block"
+              style={{ fontSize: '4.5rem', lineHeight: 1, color: '#e05050' }}
+            >♥</span>
+          </div>
+          {/* Bottom row: ♣ ♦ */}
+          <div className="flex gap-4 justify-end">
+            <span
+              className="font-headline text-green-400 opacity-40 -rotate-3 inline-block"
+              style={{ fontSize: '3.5rem', lineHeight: 1 }}
+            >♣</span>
+            <span
+              className="font-headline opacity-40 rotate-3 inline-block"
+              style={{ fontSize: '3.5rem', lineHeight: 1, color: '#e05050' }}
+            >♦</span>
+          </div>
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
