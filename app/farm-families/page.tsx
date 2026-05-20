@@ -10,24 +10,14 @@ export const metadata: Metadata = {
     'Stink Farm was born on a family farm and features real farmyard animals. The perfect card game for farm families, petting zoo days, and country kids.',
 };
 
-const ANIMALS = [
-  { file: 'Bull 1 (fav 1).png', name: 'Bull', alt: 'Bull character card from Stink Farm' },
-  { file: 'Chicken 2 (fav).png', name: 'Chicken', alt: 'Chicken character card from Stink Farm' },
-  { file: 'Fish 2 (fav 1).png', name: 'Fish', alt: 'Fish character card from Stink Farm' },
-  { file: 'Hog 4 (fav 2).png', name: 'Hog', alt: 'Hog character card from Stink Farm' },
-  { file: 'Insect 1 (fav 1).png', name: 'Insect', alt: 'Insect character card from Stink Farm' },
-  { file: 'Kitten 1 (fav).png', name: 'Kitten', alt: 'Kitten character card from Stink Farm' },
-];
-
 export default function FarmFamiliesPage() {
   return (
     <>
       {/* Hero — bright sunny farm vibe */}
       <section className="relative bg-gradient-to-b from-hay-gold to-amber-400 py-20 md:py-32 overflow-hidden">
-        {/* Farm decorations */}
+        {/* Farm decorations — no cow emoji per request */}
         <div className="absolute top-8 right-8 text-8xl opacity-30" aria-hidden="true">☀️</div>
         <div className="absolute bottom-4 left-4 text-6xl opacity-20" aria-hidden="true">🌾</div>
-        <div className="absolute bottom-8 right-16 text-5xl opacity-25" aria-hidden="true">🐄</div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -45,7 +35,7 @@ export default function FarmFamiliesPage() {
               <p className="font-body text-xl text-amber-900 mb-8 leading-relaxed">
                 Stink Farm is a family card game featuring the animals you know and love —
                 Bulls, Hogs, Chickens, and more. Bluff your way through the barnyard
-                and find out who&apos;s the best liar at the kitchen table.
+                and find out who&apos;s the best bluffer at the kitchen table.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
@@ -85,52 +75,10 @@ export default function FarmFamiliesPage() {
                 />
               </div>
               <div className="absolute -top-3 -left-3 bg-white text-barn-red font-headline text-sm px-4 py-2 rounded-full shadow-lg border-2 border-cream-dark -rotate-3">
-                Real Farm Animals!
+                Hilarious Farm Animals!
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Animals showcase */}
-      <section className="bg-cream py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="font-headline text-4xl md:text-5xl text-barn-red mb-4 flex items-center justify-center gap-3">
-            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
-            </span>
-            Your Favorite Animals Are in the Deck!
-            <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
-              <Image src="/images/animals/Stink Sniffer.png" alt="" fill className="object-contain" sizes="56px" />
-            </span>
-          </h2>
-          <p className="font-body text-lg text-gray-600 mb-12">
-            62 cards. 11 animals — all ready to be lied about with a straight face.
-          </p>
-
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mb-8">
-            {ANIMALS.map((animal) => (
-              <div key={animal.file} className="text-center">
-                <div className="bg-white rounded-2xl p-3 shadow-md border-2 border-cream-dark mb-2 card-hover">
-                  <div className="relative rounded-lg overflow-hidden">
-                    <Image
-                      src={`/images/cards/${animal.file}`}
-                      alt={animal.alt}
-                      width={675}
-                      height={1050}
-                      className="w-full h-auto"
-                      style={{ aspectRatio: '675/1050' }}
-                    />
-                  </div>
-                </div>
-                <span className="font-headline text-base text-near-black">{animal.name}</span>
-              </div>
-            ))}
-          </div>
-
-          <p className="font-body text-gray-500 text-sm">
-            Plus: Alpaca, Duck, Elk, Goat, Jackrabbit, and more!
-          </p>
         </div>
       </section>
 
@@ -156,17 +104,17 @@ export default function FarmFamiliesPage() {
               {
                 icon: '🧓',
                 title: 'Adults Love It Too',
-                desc: 'The bluffing layer means adults are strategizing while kids are winging it. Often the kids still win.',
+                desc: "The bluffing layer means adults are strategizing while kids are winging it. Good luck catching them though — those little faces give nothing away.",
               },
               {
                 icon: '📵',
                 title: 'Phones Get Put Down',
-                desc: "A good bluffing game demands eye contact. You can't spot a liar if you're looking at Instagram.",
+                desc: "A good bluffing game demands eye contact. You can't spot a bluffer if you're looking at Instagram.",
               },
               {
                 icon: '🔄',
                 title: 'Play It Again',
-                desc: 'No two games are the same. Different bluffs, different challenges, different outcomes. You\'ll want one more round.',
+                desc: "No two games are the same. Different bluffs, different challenges, different outcomes. You'll want one more round.",
               },
               {
                 icon: '🎪',
@@ -176,7 +124,7 @@ export default function FarmFamiliesPage() {
               {
                 icon: '🎁',
                 title: 'The Gift That Gets Played',
-                desc: 'Unlike some games that sit on the shelf, Stink Farm gets requested. "Can we play the farm game?" is a real thing.',
+                desc: 'Unlike some games that sit on the shelf, Stink Farm gets requested. "Can we play the farm game with the smelly animals?" is a real thing.',
               },
             ].map((item) => (
               <div
@@ -246,7 +194,7 @@ export default function FarmFamiliesPage() {
                 good barnyard joke — this game is for you.
               </p>
               <p className="font-body text-gray-600 leading-relaxed">
-                Games run 15–30 minutes. Short enough to fit in before chores. Long enough that you'll want one more round.
+                Games run 15–30 minutes. Short enough to fit in before chores. Long enough for everyone to put their bluffing skills to the test.
               </p>
             </div>
           </div>
@@ -269,7 +217,7 @@ export default function FarmFamiliesPage() {
             {[
               {
                 quote:
-                  'My kids LOVE the animal cards. They have favorite animals and will argue all game about whether the goat or the bull is stinkier.',
+                  "My kids LOVE the animal cards. They have their favorites and crack up every time reading the animals' smack talk on the cards.",
                 name: 'Jenny M.',
                 detail: 'Mom, Nebraska',
               },
@@ -281,7 +229,7 @@ export default function FarmFamiliesPage() {
               },
               {
                 quote:
-                  'Our 8-year-old looked us dead in the eyes and bluffed us all. Repeatedly. We\'re still processing. 10/10.',
+                  "Our 8-year-old looked us dead in the eyes and bluffed us all. Repeatedly. We're still processing. 10/10.",
                 name: 'The Johnson Family',
                 detail: 'Playtester family',
               },
@@ -307,7 +255,6 @@ export default function FarmFamiliesPage() {
       {/* CTA */}
       <section className="bg-gradient-to-b from-hay-gold to-amber-500 py-16 md:py-24">
         <div className="max-w-2xl mx-auto px-4 text-center">
-          <div className="text-6xl mb-6" aria-hidden="true">🌾</div>
           <h2 className="font-headline text-4xl md:text-5xl text-white mb-4 drop-shadow-sm">
             Bring the Farmyard Home
           </h2>
