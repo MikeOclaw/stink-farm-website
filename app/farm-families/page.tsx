@@ -98,12 +98,12 @@ export default function FarmFamiliesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                icon: '👧',
+                icon: 'KIDS',
                 title: 'Kids Get It Instantly',
                 desc: 'Animals they already know, rules they can learn in 5 minutes. Even little ones can play with a bit of help.',
               },
               {
-                icon: '🧓',
+                icon: 'ADULTS',
                 title: 'Adults Love It Too',
                 desc: "The bluffing layer means adults are strategizing while kids are winging it. Good luck catching them though — those little faces give nothing away.",
               },
@@ -133,7 +133,17 @@ export default function FarmFamiliesPage() {
                 className="bg-cream rounded-2xl p-6 border border-cream-dark"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-3xl flex-shrink-0" aria-hidden="true">{item.icon}</span>
+                  {item.icon === 'KIDS' ? (
+                    <span className="relative inline-block w-10 h-10 flex-shrink-0" aria-hidden="true">
+                      <Image src="/images/animals/Kitten 1 (fav).png" alt="" fill className="object-contain" sizes="40px" />
+                    </span>
+                  ) : item.icon === 'ADULTS' ? (
+                    <span className="relative inline-block w-10 h-10 flex-shrink-0" aria-hidden="true">
+                      <Image src="/images/animals/Bull 1 (fav 1).png" alt="" fill className="object-contain" sizes="40px" />
+                    </span>
+                  ) : (
+                    <span className="text-3xl flex-shrink-0" aria-hidden="true">{item.icon}</span>
+                  )}
                   <h3 className="font-headline text-xl text-near-black">{item.title}</h3>
                 </div>
                 <p className="font-body text-gray-600 text-sm leading-relaxed">{item.desc}</p>
