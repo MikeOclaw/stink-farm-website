@@ -36,23 +36,23 @@ export default function PokerPage() {
           {/* Top row: ♠ ♥ */}
           <div className="flex gap-4 mb-2 justify-end">
             <span
-              className="font-headline text-white opacity-50 rotate-6 inline-block"
-              style={{ fontSize: '4.5rem', lineHeight: 1 }}
+              className="font-headline rotate-6 inline-block"
+              style={{ fontSize: '4.5rem', lineHeight: 1, color: '#c8d0c8', opacity: 0.5 }}
             >♠</span>
             <span
-              className="font-headline opacity-50 -rotate-6 inline-block"
-              style={{ fontSize: '4.5rem', lineHeight: 1, color: '#e05050' }}
+              className="font-headline -rotate-6 inline-block"
+              style={{ fontSize: '4.5rem', lineHeight: 1, color: '#c8d0c8', opacity: 0.5 }}
             >♥</span>
           </div>
           {/* Bottom row: ♣ ♦ */}
           <div className="flex gap-4 justify-end">
             <span
-              className="font-headline text-green-400 opacity-40 -rotate-3 inline-block"
-              style={{ fontSize: '3.5rem', lineHeight: 1 }}
+              className="font-headline -rotate-3 inline-block"
+              style={{ fontSize: '3.5rem', lineHeight: 1, color: '#c8d0c8', opacity: 0.4 }}
             >♣</span>
             <span
-              className="font-headline opacity-40 rotate-3 inline-block"
-              style={{ fontSize: '3.5rem', lineHeight: 1, color: '#e05050' }}
+              className="font-headline rotate-3 inline-block"
+              style={{ fontSize: '3.5rem', lineHeight: 1, color: '#c8d0c8', opacity: 0.4 }}
             >♦</span>
           </div>
         </div>
