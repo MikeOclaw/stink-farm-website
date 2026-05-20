@@ -2,51 +2,19 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef } from 'react';
 import { BuyButton } from '@/components/BuyButton';
 import { CardShowcase } from '@/components/CardShowcase';
 import { StatBadge } from '@/components/StatBadge';
-
-const FARM_SOUNDS = [
-  '/sounds/fart.mp3',
-  '/sounds/cow.mp3',
-  '/sounds/burp.mp3',
-  '/sounds/pig.mp3',
-  '/sounds/fart-b.mp3',
-  '/sounds/chicken.mp3',
-  '/sounds/flies.mp3',
-  '/sounds/goat.mp3',
-];
+import { StinkCloud } from '@/components/StinkCloud';
 
 export default function HomePage() {
-  const soundIndex = useRef(0);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  function playNextSound() {
-    const src = FARM_SOUNDS[soundIndex.current % FARM_SOUNDS.length];
-    soundIndex.current += 1;
-    if (audioRef.current) {
-      audioRef.current.pause();
-    }
-    const audio = new Audio(src);
-    audioRef.current = audio;
-    audio.play().catch(() => {/* autoplay policy — silently ignore */});
-  }
 
   return (
     <>
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-cream to-cream-dark relative overflow-hidden">
-        {/* Decorative stink clouds — click for farmyard sounds! */}
-        <button
-          onClick={playNextSound}
-          className="absolute top-8 right-8 stink-float cursor-pointer hover:scale-110 transition-transform focus:outline-none"
-          style={{ background: 'none', border: 'none', padding: 0 }}
-          aria-label="Click for a farmyard sound"
-        >
-          <span className="text-6xl stink-green-cloud" aria-hidden="true">💨</span>
-          <p className="text-xs font-body text-gray-500 mt-1 text-center">Click me 🤭</p>
-        </button>
+        {/* Decorative stink cloud — click for farmyard sounds! */}
+        <StinkCloud className="absolute top-8 right-8" />
 
 
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
@@ -314,7 +282,7 @@ export default function HomePage() {
               },
               {
                 quote:
-                  'My teens and their friends played this for two hours straight at our last game night. They are still texting about who\'s the worst — and best — bluffer. 😄',
+                  'My teens and their friends played this for two hours straight the other night. They are still texting about who\'s the worst — and best — bluffer. 😄',
                 name: 'Sarah T.',
                 detail: 'Mom of 3, Iowa',
               },

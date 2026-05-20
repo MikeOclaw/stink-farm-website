@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { BuyButton } from '@/components/BuyButton';
 import { StatBadge } from '@/components/StatBadge';
 import { CardShowcase } from '@/components/CardShowcase';
+import { StinkCloud } from '@/components/StinkCloud';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,8 +16,8 @@ export default function FarmFamiliesPage() {
     <>
       {/* Hero — bright sunny farm vibe */}
       <section className="relative bg-gradient-to-b from-hay-gold to-amber-400 py-20 md:py-32 overflow-hidden">
-        {/* Farm decorations — no cow emoji per request */}
-        <div className="absolute top-8 right-8 text-8xl opacity-30" aria-hidden="true">☀️</div>
+        {/* Farm decorations */}
+        <StinkCloud className="absolute top-8 right-8" />
         <div className="absolute bottom-4 left-4 text-6xl opacity-20" aria-hidden="true">🌾</div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
