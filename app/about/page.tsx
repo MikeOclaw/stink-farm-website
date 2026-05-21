@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Our Story — Stink Farm',
   description:
-    'Learn how Stink Farm was born. A dad, four boys, and a kitchen table obsession turned into a card game the whole family will love.',
+    'Learn how Stink Farm was born. Mike, a father of four boys, turned a kitchen table obsession into a card game the whole family will love.',
 };
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="font-body text-xl text-gray-600">
-            A dad. Four boys. A kitchen table. And a whole lot of farmyard chaos.
+            Mike. A father of four boys. A kitchen table. And a whole lot of farmyard chaos.
           </p>
         </div>
       </section>
@@ -35,12 +35,12 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4">
           <article className="font-body text-near-black space-y-6 text-lg leading-relaxed">
             <p>
-              The game&apos;s creator grew up with a grandfather who never lost his love for
-              the country smell. On road trips, he&apos;d roll down every window the moment the
-              fields opened up — convinced the whole family needed to breathe it in. His
-              grandmother took it one step further: she&apos;d scoop a cow pie right out of the
-              field and box it up to bring a little country home with them. That&apos;s the kind
-              of family this game comes from.
+              Mike grew up with a grandfather who never lost his love for the country smell.
+              On road trips, he&apos;d roll down every window the moment the fields opened up —
+              convinced the whole family needed to breathe it in. His grandmother loved him
+              enough to do something about it: she&apos;d scoop a cow pie right out of the field
+              and box it up, so she could bring a little piece of the country back to the city
+              for him to enjoy. That&apos;s the kind of family this game comes from.
             </p>
 
             <p>
