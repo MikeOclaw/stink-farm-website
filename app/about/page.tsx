@@ -39,9 +39,9 @@ export default function AboutPage() {
               the country smell. On road trips, he&apos;d roll down every window the moment the
               fields opened up — convinced the whole family needed to breathe it in. His
               grandmother took it one step further: she&apos;d scoop a cow pie right out of
-              the field and box it up, so her husband could bring a little piece of that
-              country air back to the city with him — for continued enjoyment whenever the
-              craving hit. That&apos;s the kind of family this
+              the field and box it up, so her husband could tuck a little piece of the country
+              into his car and enjoy that fresh farm air all week on his commute to the
+              printing press. That&apos;s the kind of family this
               game comes from.
             </p>
 
