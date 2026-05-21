@@ -25,7 +25,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="font-body text-xl text-gray-600">
-            A dad. Four boys. A kitchen table. And a whole lot of farmyard chaos.
+            A dad and his four boys. A kitchen table. And a whole lot of farmyard chaos.
           </p>
         </div>
       </section>
@@ -35,7 +35,11 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4">
           <article className="font-body text-near-black space-y-6 text-lg leading-relaxed">
             <p>
-              The game&apos;s creator grew up with a grandfather who never lost his love for
+              The game&apos;s creator, Mike, built Stink Farm with his four boys.
+            </p>
+
+            <p>
+              Mike grew up with a grandfather who never lost his love for
               the country smell. On road trips, he&apos;d roll down every window the moment the
               fields opened up — convinced the whole family needed to breathe it in. His
               grandmother took it one step further: she&apos;d scoop a cow pie right out of
@@ -79,8 +83,8 @@ export default function AboutPage() {
             <p>
               Over months of playtesting, the game got tighter. New card types. Better balance.
               Actual rules written down instead of &ldquo;you know, the rules.&rdquo; The
-              family became the most ruthless focus group on the planet — if a card mechanic
-              wasn&apos;t fun, they said so. If a card was boring, it got cut.
+              Mike and his four boys didn&apos;t just playtest it — they built it. If a card
+              mechanic wasn&apos;t fun, they said so. If a card was boring, it got cut.
             </p>
 
             <p>
