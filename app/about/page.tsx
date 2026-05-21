@@ -41,7 +41,7 @@ export default function AboutPage() {
               grandmother took it one step further: she&apos;d scoop a cow pie right out of
               the field and box it up, so her husband could tuck a little piece of the country
               into his car and enjoy that fresh farm air all week on his commute to the
-              factory. That&apos;s the kind of family this
+              factory in the city. That&apos;s the kind of family this
               game comes from.
             </p>
 
