@@ -38,9 +38,10 @@ export default function AboutPage() {
               The game&apos;s creator grew up with a grandfather who never lost his love for
               the country smell. On road trips, he&apos;d roll down every window the moment the
               fields opened up — convinced the whole family needed to breathe it in. His
-              grandmother loved him enough to do something about it: she&apos;d scoop a cow pie
-              right out of the field and box it up, so she could bring a little piece of the
-              country back to the city for him to enjoy. That&apos;s the kind of family this
+              grandmother took it one step further: she&apos;d scoop a cow pie right out of
+              the field and box it up, so her husband could bring a little piece of that
+              country air back to the city with him — for continued enjoyment whenever the
+              craving hit. That&apos;s the kind of family this
               game comes from.
             </p>
 
