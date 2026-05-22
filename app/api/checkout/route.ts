@@ -56,6 +56,7 @@ export async function POST(request: Request) {
               name: PRODUCT_CONFIG.name,
               description: PRODUCT_CONFIG.description,
               images: PRODUCT_CONFIG.images.length > 0 ? PRODUCT_CONFIG.images : undefined,
+              tax_code: 'txcd_99999999', // General physical goods
             },
             unit_amount: PRODUCT_CONFIG.price,
           },
@@ -67,6 +68,9 @@ export async function POST(request: Request) {
           },
         },
       ],
+      automatic_tax: {
+        enabled: true,
+      },
       shipping_address_collection: {
         allowed_countries: ['US'],
       },
