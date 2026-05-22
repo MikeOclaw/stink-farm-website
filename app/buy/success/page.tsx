@@ -37,8 +37,7 @@ export default function SuccessPage() {
             <li className="flex items-start gap-3">
               <span className="text-hay-gold font-bold mt-0.5">📦</span>
               <span>
-                <strong className="text-near-black">We pack your order:</strong> Mike personally
-                packs every game with care (and maybe a little stink).
+                <strong className="text-near-black">We pack your order:</strong> Every game is packed with care — and just the right amount of stink.
               </span>
             </li>
             <li className="flex items-start gap-3">
