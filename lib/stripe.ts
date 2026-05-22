@@ -21,7 +21,7 @@ export function getStripe(): Stripe {
 export const PRODUCT_CONFIG = {
   name: 'Stink Farm — The Bluffing Card Game',
   description:
-    '65-card bluffing card game for 2–8 players, ages 7+. Includes animal cards, action cards, wild cards, and cheat sheet. Ships via USPS.',
+    '62-card bluffing card game for 2–6 players, ages 6–100. Includes animal cards, action cards, wild cards, and cheat sheets. Ships via USPS.',
   price: 1999, // $19.99 in cents
   currency: 'usd',
   images: [] as string[], // Add CDN URL after deploy if desired
