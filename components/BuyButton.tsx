@@ -63,8 +63,8 @@ export function BuyButton({
       <button
         onClick={handleCheckout}
         disabled={loading}
-        className={`relative font-headline text-xl md:text-2xl px-8 py-4 rounded-full shadow-lg transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed ${
-          loading ? 'opacity-70' : 'hover:scale-105 active:scale-95 btn-pulse'
+        className={`relative font-headline text-2xl md:text-3xl px-10 py-4 md:px-12 md:py-5 rounded-full transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed ${
+          loading ? 'opacity-70' : 'btn-cta'
         } ${className}`}
         aria-label={loading ? 'Processing...' : label}
       >
@@ -94,7 +94,7 @@ export function BuyButton({
             Taking you to checkout…
           </span>
         ) : (
-          label
+          <>🛒 {label}</>
         )}
       </button>
       {error && (
