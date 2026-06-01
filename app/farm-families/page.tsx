@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { BuyButton } from '@/components/BuyButton';
+import { EmailSignup } from '@/components/EmailSignup';
 import { StatBadge } from '@/components/StatBadge';
 import { CardShowcase } from '@/components/CardShowcase';
 import { StinkCloud } from '@/components/StinkCloud';
@@ -272,6 +273,13 @@ export default function FarmFamiliesPage() {
               Secure checkout via Stripe · Ships from the USA
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Email Signup */}
+      <section className="bg-cream py-12 md:py-16">
+        <div className="max-w-2xl mx-auto px-4">
+          <EmailSignup variant="light" />
         </div>
       </section>
     </>

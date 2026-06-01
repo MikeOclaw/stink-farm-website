@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { EmailSignup } from '@/components/EmailSignup';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -77,6 +78,11 @@ export default function SuccessPage() {
           >
             Learn How to Play →
           </Link>
+        </div>
+
+        {/* Email signup — stay in the loop */}
+        <div className="bg-white rounded-3xl shadow-lg p-6 mb-6 border-2 border-hay-gold">
+          <EmailSignup variant="light" />
         </div>
 
         <p className="font-body text-xs text-gray-400">

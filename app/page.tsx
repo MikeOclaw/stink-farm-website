@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BuyButton } from '@/components/BuyButton';
 import { CardShowcase } from '@/components/CardShowcase';
+import { EmailSignup } from '@/components/EmailSignup';
 import { StatBadge } from '@/components/StatBadge';
 import { StinkCloud } from '@/components/StinkCloud';
 
@@ -352,6 +353,13 @@ export default function HomePage() {
           <p className="font-body text-white text-sm mt-4 opacity-80">
             Secure checkout via Stripe · Ships from the USA
           </p>
+        </div>
+      </section>
+
+      {/* Email Signup */}
+      <section className="bg-cream py-12 md:py-16">
+        <div className="max-w-2xl mx-auto px-4">
+          <EmailSignup variant="light" />
         </div>
       </section>
     </>

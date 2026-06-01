@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { BuyButton } from '@/components/BuyButton';
+import { EmailSignup } from '@/components/EmailSignup';
 import { StatBadge } from '@/components/StatBadge';
 import { CardShowcase } from '@/components/CardShowcase';
 import type { Metadata } from 'next';
@@ -327,6 +328,13 @@ export default function PokerPage() {
           <p className="font-body text-gray-400 text-sm mt-4">
             Secure checkout via Stripe · Ships from the USA
           </p>
+        </div>
+      </section>
+
+      {/* Email Signup */}
+      <section className="bg-gray-900 py-12 md:py-16">
+        <div className="max-w-2xl mx-auto px-4">
+          <EmailSignup variant="dark" />
         </div>
       </section>
     </>
