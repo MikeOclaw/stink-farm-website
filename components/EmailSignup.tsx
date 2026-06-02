@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface EmailSignupProps {
   className?: string;
@@ -42,7 +43,9 @@ export function EmailSignup({ className = '', variant = 'light' }: EmailSignupPr
   if (status === 'success') {
     return (
       <div className={`text-center py-4 ${className}`}>
-        <div className="text-3xl mb-2">🐄</div>
+        <div className="relative inline-block w-16 h-16 mb-2" aria-hidden="true">
+          <Image src="/images/animals/Windmill.png" alt="" fill className="object-contain" sizes="64px" />
+        </div>
         <p className={`font-headline text-xl ${isDark ? 'text-white' : 'text-barn-red'}`}>
           You&apos;re in the Farmyard!
         </p>
@@ -55,8 +58,19 @@ export function EmailSignup({ className = '', variant = 'light' }: EmailSignupPr
 
   return (
     <div className={className}>
-      <p className={`font-headline text-lg mb-3 text-center ${isDark ? 'text-white' : 'text-near-black'}`}>
-        🌾 Join the Farmyard — Get Launch Updates
+      {/* Title with windmill images on each side */}
+      <h2 className={`font-headline text-4xl md:text-5xl mb-3 text-center flex items-center justify-center gap-3 ${isDark ? 'text-white' : 'text-barn-red'}`}>
+        <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+          <Image src="/images/animals/Windmill.png" alt="" fill className="object-contain" style={{ transform: 'scaleX(-1)' }} sizes="56px" />
+        </span>
+        Join the Farmyard
+        <span className="relative inline-block w-12 h-12 opacity-100" aria-hidden="true">
+          <Image src="/images/animals/Windmill.png" alt="" fill className="object-contain" sizes="56px" />
+        </span>
+      </h2>
+      {/* Subtitle line */}
+      <p className={`font-body text-lg text-center mb-6 ${isDark ? 'text-white/80' : 'text-gray-600'}`}>
+        Stay in the loop on deals, updates, and all things Stink Farm
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
         <input
