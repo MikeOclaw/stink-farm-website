@@ -10,7 +10,7 @@ interface BuyButtonProps {
 
 export function BuyButton({
   className = '',
-  label = 'Pre-Order Now — $19.99',
+  label = 'Pre-Order Now — $19.99 (Save $2)',
   source = 'unknown',
 }: BuyButtonProps) {
   const [loading, setLoading] = useState(false);

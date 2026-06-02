@@ -21,12 +21,12 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: 'Stink Farm — Outbluff the Farmyard!',
   description:
-    'The hilarious bluffing card game for the whole family. Play animal cards face-down and dare others to call your bluff. Ages 7+ | 2–8 Players | 20–40 min. Get yours for $19.99!',
+    'The hilarious bluffing card game for the whole family. Play animal cards face-down and dare others to call your bluff. Ages 7+ | 2–8 Players | 20–40 min. Pre-order for $19.99 (Save $2 off the upcoming $21.99 retail price).',
   keywords: ['stink farm', 'card game', 'family game', 'bluffing game', 'farm game', 'kids game'],
   openGraph: {
     title: 'Stink Farm — Outbluff the Farmyard!',
     description:
-      'The hilarious bluffing card game for the whole family. Play animal cards face-down and dare others to call your bluff.',
+      'Pre-order Stink Farm for $19.99 and save $2 over the future $21.99 retail price. Play animal cards face-down and dare others to call your bluff.',
     url: 'https://stinkfarmgame.com',
     siteName: 'Stink Farm',
     type: 'website',
@@ -34,7 +34,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Stink Farm — Outbluff the Farmyard!',
-    description: 'The hilarious bluffing card game for the whole family.',
+    description:
+      'Pre-order Stink Farm for $19.99 (Save $2) before the $21.99 retail price rolls out.',
   },
   robots: {
     index: true,

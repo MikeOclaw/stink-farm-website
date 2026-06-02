@@ -48,7 +48,7 @@ export default function FarmFamiliesPage() {
 
               <div className="inline-flex flex-col items-stretch gap-2">
                 <BuyButton
-                  label="Pre-Order Now — $19.99"
+                  label="Pre-Order Now — $19.99 (Save $2)"
                   source="farm-families-page"
                   className="bg-barn-red text-white hover:bg-barn-red-dark text-2xl"
                 />
@@ -260,12 +260,17 @@ export default function FarmFamiliesPage() {
           <h2 className="font-headline text-4xl md:text-5xl text-white mb-4 drop-shadow-sm">
             Bring the Farmyard Home
           </h2>
-          <p className="font-body text-amber-900 text-xl mb-8">
-            $19.99 + shipping. Hours of farmyard fun. One seriously smelly good time.
+          <p className="font-body text-amber-900 text-xl mb-3">
+            <span className="line-through text-gray-400 text-lg">$21.99</span>
+            <span className="font-headline text-xl text-barn-red ml-2">$19.99</span>
+            <span className="ml-2">+ shipping. Hours of farmyard fun. One seriously smelly good time.</span>
+          </p>
+          <p className="text-green-600 font-body text-sm font-semibold mb-8">
+            Pre-order price — Save $2!
           </p>
           <div className="inline-flex flex-col items-stretch gap-2">
             <BuyButton
-              label="Pre-Order Stink Farm — $19.99"
+              label="Pre-Order Stink Farm — $19.99 (Save $2)"
               source="farm-families-page-cta"
               className="bg-barn-red text-white hover:bg-barn-red-dark text-2xl shadow-xl"
             />

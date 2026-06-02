@@ -160,7 +160,7 @@ export default function AboutPage() {
             and again. We&apos;d love for your kitchen table to be next.
           </p>
           <BuyButton
-            label="Pre-Order Stink Farm — $19.99"
+            label="Pre-Order Stink Farm — $19.99 (Save $2)"
             source="about-page"
             className="bg-white text-barn-red hover:bg-cream text-2xl"
           />

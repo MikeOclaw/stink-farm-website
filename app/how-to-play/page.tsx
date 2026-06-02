@@ -289,7 +289,7 @@ export default function HowToPlayPage() {
             Grab your copy and let the family bluff-off begin.
           </p>
           <BuyButton
-            label="Pre-Order Now — $19.99"
+            label="Pre-Order Now — $19.99 (Save $2)"
             source="how-to-play-cta"
             className="bg-barn-red text-white hover:bg-barn-red-dark"
           />

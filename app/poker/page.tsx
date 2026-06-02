@@ -85,7 +85,7 @@ export default function PokerPage() {
 
               <div className="inline-flex flex-col items-stretch gap-2">
                 <BuyButton
-                  label="Pre-Order Now — $19.99"
+                  label="Pre-Order Now — $19.99 (Save $2)"
                   source="poker-page"
                   className="bg-green-500 text-white hover:bg-green-400 text-2xl"
                 />
@@ -317,11 +317,16 @@ export default function PokerPage() {
           <h2 className="font-headline text-4xl md:text-5xl text-white mb-4">
             The Table Is Set. <span className="text-green-400">Your Move.</span>
           </h2>
-          <p className="font-body text-gray-300 text-xl mb-8">
-            $19.99 + shipping. Less than a tournament buy-in. Way more laughs.
+          <p className="font-body text-gray-300 text-xl mb-3">
+            <span className="line-through text-gray-400 text-lg">$21.99</span>
+            <span className="font-headline text-xl text-white ml-2">$19.99</span>
+            <span className="ml-2">+ shipping. Less than a tournament buy-in. Way more laughs.</span>
+          </p>
+          <p className="text-green-600 font-body text-sm font-semibold mb-8">
+            Pre-order price — Save $2!
           </p>
           <BuyButton
-            label="Pre-Order Stink Farm — $19.99"
+            label="Pre-Order Stink Farm — $19.99 (Save $2)"
             source="poker-page-cta"
             className="bg-green-500 text-white hover:bg-green-400 text-2xl"
           />

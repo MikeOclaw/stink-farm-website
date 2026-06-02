@@ -5,9 +5,9 @@ import { ProductGallery } from '@/components/ProductGallery';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Buy Stink Farm — $19.99 | The Bluffing Card Game',
+  title: 'Buy Stink Farm — Pre-order $19.99 (Save $2 off $21.99 retail) | The Bluffing Card Game',
   description:
-    'Order Stink Farm today for $19.99 + shipping. The bluffing card game for families, ages 6–100. 62 cards, 2–6 players, 15–30 min.'
+    'Pre-order Stink Farm for $19.99 + shipping and save $2 off the future $21.99 retail price. The bluffing card game for families, ages 6–100. 62 cards, 2–6 players, 15–30 min.',
 };
 
 // 11 animals (A–K) + Wild + all 8 action cards (A–Z) = 20 cards
@@ -65,8 +65,14 @@ export default function BuyPage() {
               </div>
 
               {/* Price */}
-              <div className="flex items-baseline gap-3 mb-6">
-                <span className="font-headline text-5xl text-barn-red">$19.99</span>
+              <div className="mb-6">
+                <div className="flex flex-wrap items-baseline gap-3 mb-1">
+                  <span className="line-through text-gray-400 text-lg">$21.99</span>
+                  <span className="font-headline text-5xl text-barn-red">$19.99</span>
+                  <span className="text-green-600 font-body text-sm font-semibold">
+                    Pre-order price — Save $2!
+                  </span>
+                </div>
                 <span className="font-body text-gray-500">+ shipping</span>
               </div>
 
@@ -96,7 +102,7 @@ export default function BuyPage() {
 
               {/* CTA */}
               <BuyButton
-                label="Pre-Order Now — $19.99"
+                label="Pre-Order Now — $19.99 (Save $2)"
                 source="buy-page"
                 className="bg-barn-red text-white hover:bg-barn-red-dark w-full justify-center text-2xl mb-3"
               />
@@ -128,11 +134,17 @@ export default function BuyPage() {
       {/* Sticky mobile buy bar — hidden on md+ since button is already visible */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-cream-dark px-4 py-3 flex items-center gap-3 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
         <div className="flex flex-col leading-tight">
-          <span className="font-headline text-barn-red text-xl">$19.99</span>
+          <div className="flex items-baseline gap-2">
+            <span className="line-through text-gray-400 text-base">$21.99</span>
+            <span className="font-headline text-barn-red text-xl">$19.99</span>
+          </div>
+          <span className="text-green-600 font-body text-sm font-semibold leading-none">
+            Pre-order price — Save $2!
+          </span>
           <span className="font-body text-gray-400 text-xs">+ shipping</span>
         </div>
         <BuyButton
-          label="Pre-Order Now"
+          label="Pre-Order Now — $19.99 (Save $2)"
           source="buy-page-sticky"
           className="bg-barn-red text-white hover:bg-barn-red-dark flex-1 justify-center text-lg"
         />
