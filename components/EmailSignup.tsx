@@ -87,7 +87,7 @@ export function EmailSignup({ className = '', variant = 'light' }: EmailSignupPr
           disabled={status === 'loading'}
           className="font-headline text-lg bg-barn-red text-white px-6 py-3 rounded-full border-2 border-white btn-cta disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
-          {status === 'loading' ? 'Joining…' : 'Join Free'}
+          {status === 'loading' ? 'Joining…' : 'Count Me In'}
         </button>
       </form>
       {status === 'error' && (
