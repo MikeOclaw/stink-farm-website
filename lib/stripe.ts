@@ -24,5 +24,5 @@ export const PRODUCT_CONFIG = {
     '62-card bluffing card game for 2–6 players, ages 6–100. Includes animal cards, action cards, wild cards, and cheat sheets. Ships via USPS.',
   price: 1999, // $19.99 pre-launch price (retail: $21.99)
   currency: 'usd',
-  images: ['https://stink-farm-website.vercel.app/images/logo/stink-farm-logo-checkout.png'],
+  images: ['https://stinkfarmgame.com/images/logo/stink-farm-logo-checkout.png'],
 };
