@@ -82,7 +82,7 @@ export async function POST(request: Request) {
               amount: 499, // $4.99
               currency: 'usd',
             },
-            display_name: 'USPS First Class (5–10 business days)',
+            display_name: 'USPS First Class',
             delivery_estimate: {
               minimum: { unit: 'business_day', value: 5 },
               maximum: { unit: 'business_day', value: 10 },
@@ -96,7 +96,7 @@ export async function POST(request: Request) {
               amount: 899, // $8.99
               currency: 'usd',
             },
-            display_name: 'USPS Priority Mail (2–3 business days)',
+            display_name: 'USPS Priority Mail',
             delivery_estimate: {
               minimum: { unit: 'business_day', value: 2 },
               maximum: { unit: 'business_day', value: 3 },
